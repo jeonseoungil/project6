@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>진료의뢰서 발급</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="inner">
+                <div class="top-logo">
+                    <a href="index.html" class="sublogo"><img src="images/index/nomal.jpg" alt="grouplogo"></a>
+                    <a href="index.html" class="mainlogo"><img src="images/index/sev_logo@2x.png" alt="logo"></a>
+                    <ul class="loginMenu">
+                        <li><a href="#">원격</a></li>
+                        <li><a href="login1.html">로그인</a></li>
+                        <li><a href="login2.html">회원가입</a></li>
+                        <li><select name="Language" id="Language_main">
+                            <option value="korean">korean</option>
+                            <option value="english">english</option>
+                            <option value="japansese">japansese</option>
+                            <option value="chinese">chinese</option>
+                        </select></li>
+                    </ul>
+                </div>
+                <div class="topMenu">
+                    <a href="#"><i class="xi-bars"></i></a>
+                    <!-- 메인 목록이 추가된다면 top-mainMenu 하위개체로 -->
+                    <ul class="top-mainMenu">
+                        <li>
+                            <a href="main1ResevationInfo.html">진료안내</a>
+                        </li>
+                        <li>
+                            <a href="main2parkingInfo.html">고객참여</a>
+                        </li>
+                        <li>
+                            <a href="work3.html">병원소개</a>
+                        </li>
+                    </ul>
+                    <a href="#"><i class="xi-search"></i></a>
+                    <!-- 마우스 올렸을때 스크롤 메뉴 -->
+                    <div class="scrollMenu">
+                        <ul class="scroll-1">
+                            <li><a href="main1ResevationInfo.html">예약안내</a></li>
+                            <li><a href="SearchDoc.html">의료진 찾기</a></li>
+                            <li><a href="work1.html">제증명 FAQ</a></li>
+                        </ul>
+                        <ul class="scroll-2">
+                            <li><a href="main2parkingInfo.html">주차안내</a></li>
+                            <li><a href="login1.html">로그인 예약</a></li>
+                            <li><a href="main2treatRequest.html">진료의뢰서</a></li>
+                        </ul>
+                        <ul class="scroll-3">
+                            <li><a href="work3.html">병원 소개</a></li>
+                            <li><a href="work4.html">연혁</a></li>
+                            <li><a href="work5.html">고객 헌장</a></li>
+                        </ul>
+                    </div>
+                    <div class="scrollImg">
+                        <div class="scrollImg-sub1 on">
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료.jpg" alt="" width="250px" height="200">
+                            </div>
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료1.jpg" alt="" width="400px" height="100px">
+                                <img src="./images/병원과진료2.jpg" alt="" width="400px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub2">
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자1.jpg" alt="" width="300px" height="100px">
+                            </div>
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자2.jpg" alt="" width="300px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub3">
+                            <div class="sub3-in">
+                                <img src="./images/병원.jpg" alt="" width="200" height="200">
+                            </div>
+                            <div class="sub3-in">
+                                <img src="./images/병원2.png" alt="" width="200" height="200" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-underMenu">
+                <div class="inner">
+                    <ul>
+                        <li><a href="index.html"><i class="xi-home"></i></a></li>
+                        <li><a href="login1.html">예약 조회</a></li>
+                        <li><a href="work3.html">병원 소개<i class=""></i></a></li>
+                        <li><a href="SearchDoc.html">의료진 소개<i class=""></i></a></i></li>
+                        <li><a href="work5.html">고객 헌장<i class=""></i></a></i></li>
+                    </ul>
+                    <ul>
+                        <li><a href="login1.html">예약</a></li>
+                        <li><a href="login1.html">비회원 예약</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_search_menu">
+                <div class="search_menu_bord_bg"></div>
+                <div class="search_menu_bord">
+                    <h2>찾으시는 내용을 검색하실 수 있습니다.</h2>
+                    <div class="search_menu_box">
+                        <input type="search" placeholder="검색할 내용을 입력하세요" class="input_search_menu">
+                        <button class="button_search_menu"><i class="xi-search"></i></button>
+                        <i class="xi-close"></i>
+                    </div>
+                    <ul class="search_menu_list"></ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- 메인 -->
+
+        <main id="mainfo">
+            <div class="inner">
+                <div class="content10">
+                    <div class="contUtilMenuWrap">
+                        <h2>요양급여의뢰서(진료의뢰서)</h2>
+                        <ul class="contUtilMenu">
+                            <li><a href="#">인쇄</a></li>
+                            <li><a href="#">관심콘텐츠</a></li>
+                            <li><a href="#">URL복사</a></li>
+                            <li>
+                                <button><i class="xi-minus"></i></button>
+                            </li>
+                            <li>
+                                <button><i class="xi-plus"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="medicalCaseInfo">
+                        <p>서울대학교병원은 「의료법」 제3조의4에 의거 2단계 요양급여를 제공하는 상급종합병원입니다.</p>
+                        <span>환자가 본원에서 2단계 요양급여를 받고자 하는 때(건강보험 급여적용)에는 1단계 요양급여를 제공하는 의료기관(의원급·<br>병원급-한방포함)에서 발급한 요양급여의뢰서(진료의뢰서) 또는 상급종합병원에서의 요양급여가 필요하다는 의사소견이<br>기재된 건강진단 · 건강검진결과서를 제출해야 합니다.</span>
+                        <em>「국민건강보험 요양급여의 기준에 관한 규칙」 제2조(요양급여의 절차) 4항에 따라, 요양급여의뢰서(진료의뢰서)가 없어도<br>본원에서 건강보험 요양급여를 받을 수 있는 경우는 다음과 같습니다.</em>
+                    </div>
+                    <div class="medicalCase">
+                        <ul>
+                            <li>
+                                <span>01 <em>응급환자인 경우</em></span>
+                                <p>「응급의료에 관한 법률」제2조 제1호에 해당</p>
+                            </li>
+                            <li>
+                                <span>02 <em>분만의 경우</em></span>
+                            </li>
+                            <li>
+                                <span>03 <em>등록 장애인의 경우</em></span>
+                                <p>「장애인복지법」제 32조에 따른 등록 장애인 또는 단순 물리치료가 아닌 작업치료·운동치료 등의 재활치료가 필요하다고<br> 인정되는 자가 재활의학과에서 요양급여를 받는 경우</p>
+                            </li>
+                            <li>
+                                <span>04 <em>가정의학과에서 요양급여를 받는 경우</em></span>
+                            </li>
+                            <li>
+                                <span>05 <em>혈우병환자가 요양급여를 받는 경우</em></span>
+                            </li>
+                            <li>
+                                <span>06 <em>당해 요양기관에서 근무하는 자가 요양급여를 받은 경우</em></span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="treatFaq">
+                        <h3>진료의뢰서 FAQ</h3>
+                        <ul>
+                            <li>
+                                <strong>1. 요양급여의뢰서(진료의뢰서)란?</strong>
+                                <p>서울대학교병원은 「의료법」 제3조의4에 의거 2단계 요양급여를 제공하는 상급종합병원입니다.<br>「국민건강보험 요양급여의 기준에 관한 규칙」별지 제4호서식의 요양급여의뢰서를 제출하여야만 상급종합병원에서<br>건강보험 적용을 받을 수 있습니다.</p>
+                            </li>
+                            <li>
+                                <strong>2. 요양급여의뢰서 유효기간은?</strong>
+                                <p>별도의 유효기간은 없습니다. 하지만 환자의 최근 상태를 입증할 수 있는 요양급여의뢰서를 가져오시길 권해드립니다.</p>
+                                <em>※ 단, 의료급여환자의 의료급여의뢰서 유효기간은 발급받은 날부터 7일(공휴일은 제외) 이내에 의료기관에 제출하여야<br>합니다.</em>
+                                <em>※ 한방병원에서 발급한 의뢰서도 가능합니다.</em>
+                            </li>
+                            <li>
+                                <strong>3. 기존에 제출한 요양급여의뢰서로 타과의 진료를 받을 수 있나요?</strong>
+                                <p>진료소견이 기재된 진료과만 유효하며 다른 진료과의 진료를 원할 때에는 해당 진료과의 요양급여의뢰서를 다시 제출하셔야<br> 합니다.</p>
+                                <em>※ 단, 협진이 필요하여 '타과의뢰서'를 받을 경우 건강보험 또는 의료급여 적용이 가능합니다.</em>
+                            </li>
+                            <li>
+                                <strong>4. 요양급여의뢰서 미제출시 진료를 볼 수 없나요?</strong>
+                                <p>진료는 가능합니다. 하지만 진료비 수납 시 건강보험 수가의 100%를 본인부담 하셔야 합니다.</p>
+                            </li>
+                            <li>
+                                <strong>5. 요양급여의뢰서 없이 본인 부담으로 진료하고자 할 때는?</strong>
+                                <p>100% 본인 부담으로 가능하며, 다음 진료 시에 요양급여의뢰서 제출일부터 보험혜택을 받게 됩니다.</p>
+                                <em>※ 약처방이 있을 경우 외부 약국에서도 100% 본인부담으로 약을 타셔야 합니다.</em>
+                            </li>
+                            <li>
+                                <strong>6. 요양급여의뢰서 복사본을 제출하고 원본을 도로 가져가도 되나요?</strong>
+                                <p>원본 제출이 원칙이며, 원본은 본원에서 보관하고 요청하실 경우 사본을 드리고 있습니다.</p>
+                                <em>※복사본을 먼저 제출하더라도 이후 반드시 원본을 제출해야 합니다.</em>
+                            </li>
+                            <li>
+                                <strong>7. 다른 상급종합병원에서 서울대학교병원으로 옮기려고 하는데<br>이전 병원에서는 요양급여의뢰서 양식이 없다고 합니다. 이럴 경우 어떻게 해야하나요?</strong>
+                                <p>상급종합병원 간에도 요양급여의뢰서 필요합니다. (관련 법령:「국민건강보험 요양급여의 기준에 관한 규칙」 제2조 및 제6조)</p>
+                                <em>※ 소견서로 요양급여의뢰서 갈음 불가합니다.</em>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="surbeyForm">
+                        <p>현재 페이지에서 제공되는 내용과 사용편의성에 대하여 만족하십니까?</p>
+                        <form action="???.jsp">
+                            <input type="radio" name="rad" id="rad1">
+                            <label for="rad1">매우만족</label>
+                            <input type="radio" name="rad" id="rad2">
+                            <label for="rad2">만족</label>
+                            <input type="radio" name="rad" id="rad3">
+                            <label for="rad3">보통</label>
+                            <input type="radio" name="rad" id="rad4">
+                            <label for="rad4">불만족</label>
+                            <input type="radio" name="rad" id="rad5">
+                            <label for="rad5">매우불만족</label>
+                            <div class="etcInput">
+                                <input type="radio" name="rad" id="rad6">
+                                <label for="rad6">기타</label>
+                                <input type="text" id="text11" disabled >
+                            </div>
+                            <button class="surbeySubmit">확인</button>
+                            <div class="etcUtil">
+                                <span>관리부서 : 외래원무과 (1588-5700)</span>
+                                <span>최종 업데이트일 : 2022-05-31</span>
+                                <a href="#">통계<i class="xi-plus"></i></a>
+                                <a href="#">오류신고하기<i class="xi-angle-right"></i></a>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <aside class="aside">
+                    <div class="relationContent">
+                        <h2>관련 콘텐츠</h2>
+                        <ul>
+                            <li><a href="#">진료안내</a></li>
+                            <li><a href="#">지역채혈안내</a></li>
+                            <li><a href="#">진료비계산서</a></li>
+                            <li><a href="#">처방전</a></li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h2>자주 찾는 서비스</h2>
+                        <ul>
+                            <li><a href="#">본원</a></li>
+                            <li><a href="#">진료예약</a></li>
+                            <li><a href="#">진료안내</a></li>
+                            <li><a href="#">외래예약확인</a></li>
+                        </ul>
+                    </div>
+                    <ul class="call">
+                        <span>대표전화</span>
+                        <strong>1588-5700</strong>
+                    </ul>
+                    <img src="images/for_sending/img_top.png" alt="">
+
+                </aside>
+            </div>
+        </main>
+
+        <!-- 섹션 나누기 1 -->
+
+        <!-- 섹션 나누기 2 -->
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer-family">
+                    <ul class="family-list">
+                        <li class="on"><a href="#">세브란스병원</a></li>
+                        <li><a href="#">치과대학병원</a></li>
+                        <li><a href="#">강남세브란스병원</a></li>
+                        <li><a href="#">용인세브란스병원</a></li>
+                    </ul>
+                    <ul class="family-icon">
+                        <li><a href="https://post.naver.com/my.naver?memberNo=19457070"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="#"><i class="xi-tumblr-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/chSNUH"><i class="xi-youtube-play"></i></a></li>
+                        <li><a href="#"><i class="xi-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/SeveranceFan"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="https://twitter.com/iSEVERANCE"><i class="xi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul class="info-list">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">병원소개</a></li>
+                    </ul>
+                    <p>03722 서울특별시 서대문구 연세로 50-1</p>
+                    <p>COPYRIGHT(C) SEVERANCE HOSPITAL. ALL RIGHTS RESERVED.</p>
+                    <a href="#" class="netbut">연세의료원 네트워크
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="move-top">TOP</a>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

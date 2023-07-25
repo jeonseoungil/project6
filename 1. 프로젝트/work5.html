@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>병원헌장</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <p id="skipNav"><a href="#content">본문바로가기</a></p>
+    <!-- / p#skipNav>a[href="content"]{본문바로가기} -->
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <div class="top-logo">
+                    <a href="index.html" class="sublogo"><img src="images/index/nomal.jpg" alt="grouplogo"></a>
+                    <a href="index.html" class="mainlogo"><img src="images/index/sev_logo@2x.png" alt="logo"></a>
+                    <ul class="loginMenu">
+                        <li><a href="#">원격</a></li>
+                        <li><a href="login1.html">로그인</a></li>
+                        <li><a href="login2.html">회원가입</a></li>
+                        <li><select name="Language" id="Language_main">
+                            <option value="korean">korean</option>
+                            <option value="english">english</option>
+                            <option value="japansese">japansese</option>
+                            <option value="chinese">chinese</option>
+                        </select></li>
+                    </ul>
+                </div>
+                <div class="topMenu">
+                    <a href="#"><i class="xi-bars"></i></a>
+                    <!-- 메인 목록이 추가된다면 top-mainMenu 하위개체로 -->
+                    <ul class="top-mainMenu">
+                        <li>
+                            <a href="main1ResevationInfo.html">진료안내</a>
+                        </li>
+                        <li>
+                            <a href="main2parkingInfo.html">고객참여</a>
+                        </li>
+                        <li>
+                            <a href="work3.html">병원소개</a>
+                        </li>
+                    </ul>
+                    <a href="#"><i class="xi-search"></i></a>
+                    <!-- 마우스 올렸을때 스크롤 메뉴 -->
+                    <div class="scrollMenu">
+                        <ul class="scroll-1">
+                            <li><a href="main1ResevationInfo.html">예약안내</a></li>
+                            <li><a href="SearchDoc.html">의료진 찾기</a></li>
+                            <li><a href="work1.html">제증명 FAQ</a></li>
+                        </ul>
+                        <ul class="scroll-2">
+                            <li><a href="main2parkingInfo.html">주차안내</a></li>
+                            <li><a href="login1.html">로그인 예약</a></li>
+                            <li><a href="main2treatRequest.html">진료의뢰서</a></li>
+                        </ul>
+                        <ul class="scroll-3">
+                            <li><a href="work3.html">병원 소개</a></li>
+                            <li><a href="work4.html">연혁</a></li>
+                            <li><a href="work5.html">고객 헌장</a></li>
+                        </ul>
+                    </div>
+                    <div class="scrollImg">
+                        <div class="scrollImg-sub1 on">
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료.jpg" alt="" width="250px" height="200">
+                            </div>
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료1.jpg" alt="" width="400px" height="100px">
+                                <img src="./images/병원과진료2.jpg" alt="" width="400px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub2">
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자1.jpg" alt="" width="300px" height="100px">
+                            </div>
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자2.jpg" alt="" width="300px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub3">
+                            <div class="sub3-in">
+                                <img src="./images/병원.jpg" alt="" width="200" height="200">
+                            </div>
+                            <div class="sub3-in">
+                                <img src="./images/병원2.png" alt="" width="200" height="200" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-underMenu">
+                <div class="inner">
+                    <ul>
+                        <li><a href="index.html"><i class="xi-home"></i></a></li>
+                        <li><a href="login1.html">예약 조회</a></li>
+                        <li><a href="work3.html">병원 소개<i class=""></i></a></li>
+                        <li><a href="SearchDoc.html">의료진 소개<i class=""></i></a></i></li>
+                        <li><a href="work5.html">고객 헌장<i class=""></i></a></i></li>
+                    </ul>
+                    <ul>
+                        <li><a href="login1.html">예약</a></li>
+                        <li><a href="login1.html">비회원 예약</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_search_menu">
+                <div class="search_menu_bord_bg"></div>
+                <div class="search_menu_bord">
+                    <h2>찾으시는 내용을 검색하실 수 있습니다.</h2>
+                    <div class="search_menu_box">
+                        <input type="search" placeholder="검색할 내용을 입력하세요" class="input_search_menu">
+                        <button class="button_search_menu"><i class="xi-search"></i></button>
+                        <i class="xi-close"></i>
+                    </div>
+                    <ul class="search_menu_list"></ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- //header -->
+        <section id="visual">
+            <ul class="main-banner">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!-- //visual -->
+        <main id="container" class="main">
+            <section id="content">
+                <div class="inner">
+                    <div class="contentHead5">
+                        <h2>고객헌장</h2>
+                        <ul class="contentUtil">
+                            <li>
+                                <a href="#" onclick="window.print()">인쇄
+                            </li></a>
+                            <li>관심콘텐츠</li>
+                            <li><a href="javascript:;" onclick="copyUrl()"> URL복사</li></a>
+                            <p>
+                                <button onclick='javascript:zoomIn();'><i class="xi-minus"></i></button>
+                                <button onclick='javascript:zoomOut();'><i class="xi-plus"></i></button>
+                            </p>
+                        </ul>
+                    </div>
+
+                    <div class="promise">
+                        <div class="proBox">
+                            <img src="./images/work/66.jpg" alt="" width="1040px">
+                            <strong>서울대학교병원은</strong>
+                            <p><span>환자중심, 인간존중, 지식창조, 사회봉사</span> 라는 <br>
+                                경영이념을 통해 신체적/정신적 어려움으로 <br>
+                                병원을 찾는 <span>모든 환자의 권리를 존중</span>하고, <br>
+                                <span>최선의 진료를 제공</span>하기 위하여 다음과 같이 선언합니다.
+                            </p>
+                        </div>
+
+                        <div class="promise2">
+                            <p><strong>하나,&nbsp;</strong>우리는 국가중앙병원으로서 신뢰할 수 있는 양질의 적정진료(Clinical Excellency)를 제공하기 위해
+                                최선을 다하겠습니다.</p>
+                            <p><strong>하나,&nbsp;</strong>우리는 환자의 권리와 의무를 보장하며 안전한 환자중심의 진료 환경을 제공하기 위해 노력하겠습니다.</p>
+                            <p><strong>하나,&nbsp;</strong>우리는 병원 이용 및 진료행위에 대한 정보를 환자가 이해할 수 있도록 설명하겠습니다.</p>
+                            <p><strong>하나,&nbsp;</strong>우리는 환자의 목소리에 귀 기울이며 열린 마음으로 다양한 의견을 수렴하겠습니다.</p>
+                            <p><strong>하나,&nbsp;</strong>우리는 국가공공의료사업을 적극 수행하여 국민 보건 향상을 위해 더욱 노력하겠습니다.</p>
+                            <p><strong>하나,&nbsp;</strong>우리는 교육&middot;연구기관인 대학병원으로서 보건의료 인력에 대한 교육 훈련과 의학발전을 위한 연구 활동을
+                                수행하겠습니다.</p>
+                        </div>
+
+                        <div class="promise3">
+                            <p>우리는 위와 같은 목표를 달성하기 위하여 구체적인 서비스 이행표준을 제시하고 이를 적극 실천할 것을 약속드립니다.&nbsp;</p>
+                        </div>
+                        <div class="btnDown"> <a href="javascript:void(0);" onclick="downloadImg('/Content/images/shareInstagram.jpg')"
+                                role="button"><span>고객헌장 전체 다운로드</span><i class="xi-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="f2">
+                <div class="inner">
+                    <div class="footer-family">
+                        <ul class="family-list">
+                            <li class="on"><a href="#">세브란스병원</a></li>
+                            <li><a href="#">치과대학병원</a></li>
+                            <li><a href="#">강남세브란스병원</a></li>
+                            <li><a href="#">용인세브란스병원</a></li>
+                        </ul>
+                        <ul class="family-icon">
+                            <li><a href="https://post.naver.com/my.naver?memberNo=19457070"><i class="xi-naver-square"></i></a></li>
+                            <li><a href="#"><i class="xi-tumblr-square"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/chSNUH"><i class="xi-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="xi-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/SeveranceFan"><i class="xi-facebook-official"></i></a></li>
+                            <li><a href="https://twitter.com/iSEVERANCE"><i class="xi-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <ul class="info-list">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">고객의 소리</a></li>
+                            <li><a href="#">병원소개</a></li>
+                        </ul>
+                        <p>03722 서울특별시 서대문구 연세로 50-1</p>
+                        <p>COPYRIGHT(C) SEVERANCE HOSPITAL. ALL RIGHTS RESERVED.</p>
+                        <a href="#" class="netbut">연세의료원 네트워크
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/main.js"> </script>
+</body>
+
+</html>

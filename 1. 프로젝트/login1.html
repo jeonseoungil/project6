@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+    <header id="header">
+        <div class="inner">
+            <div class="top-logo">
+                <a href="index.html" class="sublogo"><img src="images/index/nomal.jpg" alt="grouplogo"></a>
+                <a href="index.html" class="mainlogo"><img src="images/index/sev_logo@2x.png" alt="logo"></a>
+                <ul class="loginMenu">
+                    <li><a href="#">원격</a></li>
+                    <li><a href="login1.html">로그인</a></li>
+                    <li><a href="login2.html">회원가입</a></li>
+                    <li><select name="Language" id="Language_main">
+                        <option value="korean">korean</option>
+                        <option value="english">english</option>
+                        <option value="japansese">japansese</option>
+                        <option value="chinese">chinese</option>
+                    </select></li>
+                </ul>
+            </div>
+            <div class="topMenu">
+                <a href="#"><i class="xi-bars"></i></a>
+                <!-- 메인 목록이 추가된다면 top-mainMenu 하위개체로 -->
+                <ul class="top-mainMenu">
+                    <li>
+                        <a href="main1ResevationInfo.html">진료안내</a>
+                    </li>
+                    <li>
+                        <a href="main2parkingInfo.html">고객참여</a>
+                    </li>
+                    <li>
+                        <a href="work3.html">병원소개</a>
+                    </li>
+                </ul>
+                <a href="https://www.youtube.com/user/chSNUH"><i class="xi-search"></i></a>
+                <!-- 마우스 올렸을때 스크롤 메뉴 -->
+                <div class="scrollMenu">
+                    <ul class="scroll-1">
+                        <li><a href="main1ResevationInfo.html">예약안내</a></li>
+                        <li><a href="SearchDoc.html">의료진 찾기</a></li>
+                        <li><a href="work1.html">제증명 FAQ</a></li>
+                    </ul>
+                    <ul class="scroll-2">
+                        <li><a href="main2parkingInfo.html">주차안내</a></li>
+                        <li><a href="login1.html">로그인 예약</a></li>
+                        <li><a href="main2treatRequest.html">진료의뢰서</a></li>
+                    </ul>
+                    <ul class="scroll-3">
+                        <li><a href="work3.html">병원 소개</a></li>
+                        <li><a href="work4.html">연혁</a></li>
+                        <li><a href="work5.html">고객 헌장</a></li>
+                    </ul>
+                </div>
+                <div class="scrollImg">
+                    <div class="scrollImg-sub1 on">
+                        <div class="sub1-in">
+                            <img src="./images/병원과진료.jpg" alt="" width="250px" height="200">
+                        </div>
+                        <div class="sub1-in">
+                            <img src="./images/병원과진료1.jpg" alt="" width="400px" height="100px">
+                            <img src="./images/병원과진료2.jpg" alt="" width="400px" height="100px">
+                        </div>
+                    </div>
+                    <div class="scrollImg-sub2">
+                        <div class="sub2-in">
+                            <img src="./images/병원과환자1.jpg" alt="" width="300px" height="100px">
+                        </div>
+                        <div class="sub2-in">
+                            <img src="./images/병원과환자2.jpg" alt="" width="300px" height="100px">
+                        </div>
+                    </div>
+                    <div class="scrollImg-sub3">
+                        <div class="sub3-in">
+                            <img src="./images/병원.jpg" alt="" width="200" height="200">
+                        </div>
+                        <div class="sub3-in">
+                            <img src="./images/병원2.png" alt="" width="200" height="200" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-underMenu">
+            <div class="inner">
+                <ul>
+                    <li><a href="index.html"><i class="xi-home"></i></a></li>
+                    <li><a href="login1.html">예약 조회</a></li>
+                    <li><a href="work3.html">병원 소개<i class=""></i></a></li>
+                    <li><a href="SearchDoc.html">의료진 소개<i class=""></i></a></i></li>
+                    <li><a href="work5.html">고객 헌장<i class=""></i></a></i></li>
+                </ul>
+                <ul>
+                    <li><a href="login1.html">예약</a></li>
+                    <li><a href="login1.html">비회원 예약</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<div class="main">
+    <div class="inner">
+        <login id="LogIn">
+        <div class="Subscription_button_image">
+            <ul class="Subscription_image">
+                <li class="login_Subscription_image"><i class='bx bx-user-plus'></i> 로그인</li>
+                <li class="nonlogin_Subscription_image"><i class='bx bx-user-x'></i>비 회원 로그인</li>
+            </ul>
+        </div>
+            <div class="leftLogIn">
+                <div class="memberLogin">
+                    <i class='bx bx-user'></i>
+                    <h2>로그인</h2>
+                </div>
+                <p>서울대학교병원 홈페이지 회원서비스는<br>로그인 후 이용하실 수 있습니다.</p>
+                <input type="text" name="userid" placeholder="아이디/진찰권(환자번호)" class="login_id">
+                <input type="password" name="userpassword" class="login_password" placeholder="비밀번호">
+                <button class="login">로그인</button>
+                <a href="#">아이디/비밀번호찾기</a>
+                <a href="login2.html">회원가입</a>
+                <button class="naverLogIn"><img src="./images/Project/navericon.png" alt="">네이버 아이디로 로그인</button>
+                <div class="ReservationAndcall">
+                    <p>대표전화, 진료예약</p>
+                    <strong>1588-5700</strong>
+                </div>
+            </div>
+            <div class="rightLogIn">
+                <div class="non-memberLogin">
+                    <i class='bx bx-lock-alt'></i>
+                    <h2>비회원 로그인</h2>
+                </div>
+                <p>비회원서비스는 개인정보 수집동의 이후 <br>이용 하실수 있습니다.</p>
+                <input type="text" id="name" name="name" placeholder="이름" class="name">
+                <input type="text" id="edical_examination_ticket" name="edical_examination_ticket" placeholder="진찰권 번호"
+                    class="name">
+                <input type="text" id="callNumber" name="callNumber" placeholder="휴대전화번호(010-0000-0000)"
+                    class="callNumber">
+                <button class="Approval">승인</button>
+                <input type="text" id="Authentication_Number" name="Authentication_Number" placeholder="승인번호"
+                    class="Authentication_Number">
+                <textarea cols="100" rows="20" id="Collection_Of_Personal_Information" class="textarea">※ 개인정보 수집 및 이용에 대한 안내
+        1. 수집/이용 목적: 비회원 환자의 진료예약 신청, 확인 및 취소에 대한 이용 기록 보관.
+        2. 수집하는 항목: 이름, 환자등록번호(진찰권 번호), 휴대전화번호
+        3. 개인정보의 보유 및 이용기간 : 2년
+        4. 동의를 거부할 권리가 있으며, 대표전화(전화: 1588-5700)로 이용하실 수 있습니다.</textarea>
+                <div class="personal_information">
+                    <input type="checkbox" id="Consent_To_use">
+                    <label for="Consent_To_use" class="Consent_personal_information">환자 및 법적대리인만 서비스 이용이 가능하며
+                        개인정보 이용에 동의합니다.</label>
+                </div>
+                <button class="nonlogin">비회원 로그인</button>
+                <a href="login2.html" class="forgot_The_Number">진찰권 번호(환자번호)를 잊으셨나요?</a>
+            </div>
+        </login>
+    </div>
+</div>
+         <!-- 푸터 -->
+         <footer id="footer">
+            <div class="inner">
+                <div class="footer-family">
+                    <ul class="family-list">
+                        <li class="on"><a href="#">세브란스병원</a></li>
+                        <li><a href="#">치과대학병원</a></li>
+                        <li><a href="#">강남세브란스병원</a></li>
+                        <li><a href="#">용인세브란스병원</a></li>
+                    </ul>
+                    <ul class="family-icon">
+                        <li><a href="#"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="#"><i class="xi-tumblr-square"></i></a></li>
+                        <li><a href="#"><i class="xi-youtube-play"></i></a></li>
+                        <li><a href="#"><i class="xi-instagram"></i></a></li>
+                        <li><a href="#"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="#"><i class="xi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul class="info-list">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">병원소개</a></li>
+                    </ul>
+                    <p>03722 서울특별시 서대문구 연세로 50-1</p>
+                    <p>COPYRIGHT(C) SEVERANCE HOSPITAL. ALL RIGHTS RESERVED.</p>
+                    <a href="#" class="netbut">연세의료원 네트워크
+                    </a>
+                </div>
+            </div>
+        </footer>
+</div>
+
+</body>
+    <script src="js/main.js"></script>
+
+
+</html>

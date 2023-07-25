@@ -1,0 +1,3534 @@
+/* 공통부분 */
+
+#wrap {
+  width: 100%;
+}
+
+.inner {
+  width: 1400px;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* 헤더 */
+
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 180px;
+  border-bottom: 1px solid #26262c;
+  overflow: hidden;
+  transition: 0.2s;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+#header.on {
+  height: 370px;
+  border-bottom: 3px solid #26262c;
+}
+
+#header .inner {
+  height: 370px;
+}
+
+/* 이너 온 길이 조절부분 다른부분 완성후 수정 */
+
+#header .inner .top-logo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+#header .inner .top-logo .mainlogo {
+  height: 47px;
+  width: 250px;
+}
+
+#header .inner .top-logo .mainlogo img {
+  height: 40px;
+  width: 250px;
+}
+
+#header .inner .top-logo .sublogo img {
+  width: 140px;
+  height: 50px;
+}
+
+#header .inner .top-logo .loginMenu {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .inner .top-logo .loginMenu li {
+  position: relative;
+}
+#header .inner .top-logo .loginMenu #Language_main {
+  border: none;
+}
+#header .inner .topMenu {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 1400px;
+}
+
+#header .inner .topMenu .top-mainMenu {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  height: 43px;
+}
+
+#header .inner .topMenu .top-mainMenu li {
+  transition: 0.2s;
+}
+
+#header .inner .topMenu .top-mainMenu li.on {
+  border-bottom: 3px solid #26262c;
+}
+
+#header .inner .topMenu .top-mainMenu a {
+  font-size: 20px;
+}
+
+#header .topMenu a:nth-last-of-type(2),
+#header .topMenu a:nth-last-of-type(1) {
+  font-size: 30px;
+}
+
+/* 스크롤 매뉴 */
+
+#header .inner .topMenu .scrollMenu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: flex;
+  width: 660px;
+  justify-content: space-around;
+}
+
+#header .inner .topMenu .scrollMenu a {
+  font-size: 20px;
+}
+
+#header .inner .topMenu .scrollMenu ul {
+  border-right: 1px solid #999;
+  width: 220px;
+  text-align: center;
+}
+
+#header .inner .topMenu .scrollMenu ul li {
+  margin: 20px 0px;
+}
+
+#header .inner .topMenu .scrollMenu ul li a:hover {
+  color: #6e8cd1;
+  transition: 0.2s;
+}
+
+/* 스크롤 서브 */
+.scrollImg {
+  position: absolute;
+  top: 50px;
+  left: 730px;
+}
+
+.topMenu .scrollImg .on {
+  opacity: 1;
+}
+
+.scrollImg-sub1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s;
+  margin-left: 70px;
+}
+
+.scrollImg-sub1 .sub1-in {
+  margin: 10px;
+}
+.scrollImg-sub1 .sub1-in:last-of-type img {
+  margin-bottom: 10px;
+}
+.scrollImg-sub2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.scrollImg-sub2 .sub2-in img {
+  margin: 5px 0 10px;
+}
+
+.scrollImg-sub3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  display: flex;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.scrollImg-sub3 .sub3-in {
+  margin: 5px 10px 0 0;
+}
+.scrollImg-sub3 .sub3-in img {
+  margin-right: 10px;
+}
+/* 탑 언더메뉴 */
+.top-underMenu {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  top: 130px;
+  background-color: #5c7beb;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.top-underMenu a {
+  color: #e9e8e4;
+  font-size: 20px;
+}
+
+.on .top-underMenu {
+  height: 0;
+  top: 370px;
+  z-index: 100;
+}
+
+.top-underMenu .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-underMenu .inner ul {
+  display: flex;
+}
+
+.top-underMenu .inner ul li {
+  font-size: 20px;
+  margin: 10px 15px 10px 10px;
+}
+
+.top-underMenu .inner ul:last-of-type {
+  background-color: #27a8e0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.top-underMenu .inner ul:last-of-type li:first-of-type {
+  position: relative;
+}
+
+.top-underMenu .inner ul:last-of-type li:first-of-type::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: #b0c0f8;
+  top: 6px;
+  left: 47px;
+}
+
+.top-underMenu .inner ul:first-of-type li {
+  border-radius: 1px solid #b0c0f8;
+}
+
+/* 게시판 검색 */
+
+.search_menu_bord_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1000;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.search_menu_bord_bg.on {
+  opacity: 0.7;
+  pointer-events: all;
+}
+.search_menu_bord {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: 70%;
+  width: 60%;
+  border-radius: 20px;
+  z-index: 10000;
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  background-image: url(../images/index/subg.jpg);
+  background-position: 0, 0;
+  background-size: cover;
+  border: 3px solid #234bd7;
+  color: #26262c;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 50px;
+  font-weight: 700;
+}
+.search_menu_bord h2 {
+  background-color: white;
+  margin: auto;
+  width: 480px;
+  border-radius: 10px;
+}
+
+.search_menu_bord.on {
+  opacity: 1;
+  pointer-events: all;
+}
+.search_menu_bord h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.search_menu_box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.search_menu_box .xi-close {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  font-size: 20px;
+  color: white;
+}
+.input_search_menu {
+  height: 40px;
+  vertical-align: top;
+}
+.search_menu_list {
+  width: 600px;
+  display: block;
+  margin: auto;
+}
+.search_menu_list li {
+  display: inline-block;
+  width: 150px;
+  background: #000;
+  height: 30px;
+  transition: 0.3s;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px;
+}
+.search_menu_list li:hover {
+  border: 1px solid #000;
+  background-color: white;
+}
+.search_menu_list li:hover a {
+  color: black;
+}
+.search_menu_list li a {
+  color: white;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+/* 메인 */
+
+#main,
+.main {
+  font-size: 20px;
+  margin-top: 180px;
+}
+
+/* 아티클 항목 */
+
+.uesrTypeMenu {
+  position: absolute;
+  top: 300px;
+  left: -70px;
+}
+
+.uesrTypeMenu > div {
+  background-color: rgba(80, 80, 80, 0.7);
+  width: 130px;
+  height: 75px;
+  border-radius: 0 37px 37px 0;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  padding-right: 60px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.uesrTypeMenu > div.on {
+  background-color: rgba(36, 51, 255, 0.8);
+  width: 200px;
+}
+
+.uesrTypeMenu > div:hover {
+  background-color: rgba(36, 51, 255, 0.8);
+  width: 200px;
+}
+
+.uesrTypeMenu > div a {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.uesrTypeMenu > div a strong {
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding-top: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.uesrTypeMenu > div i {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  font-size: 35px;
+  color: white;
+}
+
+#main .article {
+  height: 500px;
+  background-image: url(../images/index/img-visual-patient1.jpg);
+  background-position: 0 0;
+}
+
+#main .article .inner {
+  background: none;
+  color: white;
+  padding-top: 150px;
+}
+
+#main .article .inner > strong {
+  display: block;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+#main .article .inner > span {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+/* 메인 / 콘텐츠 */
+#main .content {
+  background-image: url(../images/index/bg-main-pattern.png);
+  min-height: 600px;
+}
+
+#main .content .inner .familySite {
+  display: flex;
+}
+
+#main .content .inner .familySite li {
+  width: 25%;
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+  color: white;
+}
+
+#main .content .inner .familySite li:nth-last-of-type(1) {
+  background-color: #839ace;
+}
+
+#main .content .inner .familySite li:nth-last-of-type(2) {
+  background-color: #5c7beb;
+}
+
+#main .content .inner .familySite li:nth-last-of-type(3) {
+  background-color: #445d97;
+}
+
+#main .content .inner .familySite li:nth-last-of-type(4) {
+  background-color: #193f96;
+}
+
+#main .content .inner .familySite li:nth-last-of-type(5) {
+  background-color: #234bd7;
+}
+
+/* 메인 / 컨텐츠베너 */
+.contentBenner {
+  position: relative;
+  overflow: hidden;
+}
+
+.contentBenner .view-venner {
+  display: flex;
+  transition: 0.2s;
+  width: 5250px;
+  transform: translateX(-1400px);
+}
+
+.contentBenner .view-venner li,
+.contentBenner .view-venner-doc li {
+  transition: 0.2s;
+  width: 350px;
+}
+
+.contentBenner .view-venner li a,
+.contentBenner .view-venner-doc li a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 150px;
+  padding-top: 45px;
+  box-sizing: border-box;
+}
+
+.contentBenner .view-venner li a .textBox,
+.contentBenner .view-venner-doc li a .textBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentBenner .view-venner li a .textBox strong,
+.contentBenner .view-venner-doc li a .textBox strong {
+  font-size: 20px;
+  font-weight: 600;
+}
+#main .content .inner .view-venner-doc li a .textBox span,
+#main .content .inner .view-venner li a .textBox span {
+  font-size: 16px;
+}
+
+.contentBenner .view-venner li img,
+.contentBenner .view-venner-doc li img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.content .view-venner-l {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: 770px;
+  left: 190px;
+  font-size: 55px;
+  background: none;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.content .view-venner-r {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: 770px;
+  right: 190px;
+  font-size: 55px;
+  background: none;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* 메인 / 카드콘텐츠 */
+
+.contentCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentCard li {
+  width: 23%;
+  height: 350px;
+  background-color: #00d635;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 70px 20px 20px 20px;
+  position: relative;
+}
+
+.contentCard li a {
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.contentCard li a p {
+  color: #234bd7;
+  font-size: 14px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.contentCard li a span {
+  text-align: start;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.contentCard li.card-1 {
+  background-image: url(../images/index/bg-health-info.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contentCard li.card-2 {
+  background-image: url(../images/index/bg-sympathy-story.jpg);
+  background-size: cover;
+}
+
+.contentCard li.card-3 {
+  background-image: url(../images/index/Frameimg.jpg);
+  background-size: cover;
+}
+
+.contentCard li.card-3 a {
+  padding: 2px;
+}
+
+.contentCard li.card-3 a span {
+  font-size: 14px;
+}
+
+.contentCard li strong {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.contentCard li.card-4 {
+  position: relative;
+}
+
+.contentCard li.card-4 a {
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: -70px;
+}
+
+.contentCard li.card-4 img {
+  width: 322px;
+  height: 350px;
+}
+
+.contentCard li strong::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 143px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.contentCard li a {
+  margin-top: 70px;
+  background-color: white;
+  display: block;
+  height: 145px;
+}
+
+/* 메인컨텐츠 / 뉴스베너 */
+.newsvenor {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(
+    299deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(38, 38, 44, 1) 26%
+  );
+  padding-top: 80px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  color: white;
+}
+
+.newsvenor h3 {
+  font-size: 50px;
+}
+
+.newsvenor .news-item span {
+  font-size: 16px;
+  display: block;
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  color: #999;
+}
+
+.newsvenor .news-but-box {
+  position: relative;
+}
+
+.newsvenor .news-but-box button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  top: 150px;
+  font-size: 50px;
+  padding-top: 3px;
+  cursor: pointer;
+  color: #26262c;
+}
+
+.newsvenor .news-but-box .news-but-l {
+  left: 30px;
+  padding-top: 5px;
+  padding-left: 16px;
+}
+
+.newsvenor .news-but-box .news-but-r {
+  left: 130px;
+}
+
+.newsvenor .news-but-box .news-but-r i {
+  position: absolute;
+  left: -5px;
+  top: 3px;
+}
+
+.news-text-box {
+  height: 230px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.news-item-benner {
+  position: relative;
+  width: 4690px;
+  transform: translateX(-660px);
+  transition: 0.5s;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.news-item {
+  background-color: white;
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+  color: #26262c;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.news-item a {
+  font-size: 18px;
+  color: #26262c;
+}
+
+.report::after {
+  content: "언론 보도";
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  background-color: #234bd7;
+  font-size: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 7px;
+  left: 20px;
+  top: -20px;
+  color: white;
+}
+
+.webzine::after {
+  content: "웹진";
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  background-color: #fa0b0b;
+  font-size: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 7px;
+  left: 20px;
+  top: -20px;
+  color: white;
+}
+
+/* 공지사항 */
+
+.notice {
+  background-image: url(../images/index/img-visual-patient1_210107.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  height: 600px;
+}
+
+.notice .inner {
+  height: 600px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner .notice-benner {
+  box-sizing: border-box;
+  display: flex;
+  width: 6020px;
+  transition: 0.3s;
+}
+
+.inner .notice-benner ul {
+  box-sizing: border-box;
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.inner .notice-benner ul li {
+  width: 230px;
+  height: 420px;
+  background-color: white;
+  display: block;
+  border-radius: 115px;
+  margin: 0 25px 0 25px;
+  text-align: center;
+}
+
+.inner .notice-benner a img {
+  width: 100%;
+  height: 100%;
+}
+
+.inner .notice-benner img {
+  width: 100%;
+  height: 100%;
+}
+
+.notice .inner > ul {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.notice .inner > ul li {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.notice .inner ul li.on {
+  background-color: goldenrod;
+  width: 25px;
+}
+
+/* 스크롤 리모컨 */
+
+.Quick_menu {
+  width: 90px;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #26262c;
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  right: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  overflow: hidden;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Quick_menu ul {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.Quick_menu ul li {
+  width: 90px;
+  height: 20%;
+  padding: 5px 0 5px 0;
+  box-sizing: border-box;
+}
+
+.Quick_menu ul li:last-of-type {
+  border: none;
+}
+
+.Quick_menu .on {
+  background-color: #26262c;
+  color: #e9e8e4;
+}
+
+/* 메인_doc */
+
+#main .article.doc {
+  height: 500px;
+  background-image: url(../images/index/img-visual-expert1.jpg);
+  background-position: 0 0;
+}
+
+.contentBenner .view-venner-doc {
+  display: flex;
+}
+
+/* doc 카드컨텐츠 */
+
+.contentCard-doc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentCard-doc li {
+  width: 23%;
+  height: 350px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #dbdbdb;
+  transition: 0.3s;
+}
+
+.contentCard-doc li:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contentCard-doc li a img {
+  width: 100%;
+}
+
+.contentCard-doc li a strong {
+  display: block;
+  font-size: 28px;
+}
+
+.contentCard-doc li a span {
+  font-size: 16px;
+}
+
+/* doc 뉴스베너 */
+
+#main .newsvenor.doc {
+  background: linear-gradient(299deg, rgb(82, 82, 82) 0%, rgb(51, 51, 177) 26%);
+}
+
+#main .newsvenor.doc .news-but-l,
+#main .newsvenor.doc .news-but-r {
+  color: rgb(51, 51, 177);
+}
+
+.Seminar::after {
+  content: "세미나 강연";
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  background-color: #00b12c;
+  font-size: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 7px;
+  left: 20px;
+  top: -20px;
+  color: white;
+}
+
+/* SearchDoc 페이지 메인 */
+
+.SearchDoc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.SearchDoc .inner {
+  width: 1000px;
+}
+
+.SearchDoc .inner h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 50px 0 70px 0;
+  display: block;
+  font-weight: 600;
+}
+
+.Search-radio-box {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.Search-radio-box input {
+  margin: 0 10px 0 30px;
+}
+
+.Search-word-box {
+  display: flex;
+  justify-content: center;
+  background-color: #e2e2e2;
+  width: 1000px;
+  height: 70px;
+  margin: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.Search-word-box select {
+  height: 50px;
+  border: 1px solid #acacac;
+  margin: 0 10px 0 10px;
+  font-size: 16px;
+  padding-left: 20px;
+  width: 200px;
+}
+
+.Search-word-box input[type="search"],
+.input_search_menu {
+  font-size: 16px;
+  border: 1px solid #acacac;
+  margin: 0 10px 0 10px;
+  width: 400px;
+  padding: 0 20px 0 20px;
+}
+
+.Search-word-box button,
+.button_search_menu {
+  border: 1px solid #acacac;
+  margin: 0 10px 0 10px;
+  width: 60px;
+  background-color: #0094fe;
+  border-radius: 3px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.search_doc_output {
+  width: 1057px;
+  /* 임시
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content:space-around; */
+  margin: -26px;
+  margin-top: 0;
+}
+
+.search_doc_output .Search_esults {
+  width: 20%;
+  height: 370px;
+  margin: 26px;
+  display: inline-block;
+  text-align: center;
+}
+
+.search_doc_output .Search_esults img {
+  width: 100%;
+}
+
+.search_doc_output .Search_esults strong {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.search_doc_output .Search_esults p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+/* work 페이지 */
+
+fieldset.pl100px {
+  padding-left: 66%;
+  margin: 80px 0;
+}
+
+#container.main #content .inner.w1200 {
+  width: 1200px;
+}
+#container.main.h600 {
+  height: 600px;
+}
+
+.main h2.pl100px {
+  padding-left: 100px;
+}
+#container .inner .contentUtil {
+  padding-right: 90px;
+}
+
+#container .contentHead2 .contentUtil {
+  padding-right: 0px;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+}
+.main h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.main h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.main h4 {
+  font-size: 16px;
+}
+
+.main .contentHead h2 {
+  position: absolute;
+  left: 0%;
+  top: 5%;
+}
+.main .contentHead2 h2 {
+  position: absolute;
+  left: 0%;
+  top: 10%;
+}
+.main .contentHead5 h2 {
+  position: absolute;
+  left: 11%;
+  top: 10%;
+}
+
+.main .boardTotal {
+  font-size: 18px;
+  display: block;
+  top: 21%;
+  left: 7%;
+  position: absolute;
+}
+.main .boardTotal em {
+  color: blue;
+}
+
+.main .contentUtil {
+  display: flex;
+  justify-content: end;
+}
+
+.main .contentHead .contentUtil {
+  padding-top: 60px;
+}
+
+.main .contentHead2 .contentUtil {
+  position: absolute;
+  left: 71%;
+  top: 12%;
+}
+
+.main .contentHead5 .contentUtil {
+  position: absolute;
+  left: 57%;
+  top: 12%;
+}
+.main .contentUtil li {
+  margin: 10px;
+}
+
+.main .contentUtil li::before {
+  content: "";
+  width: 1px;
+  height: 15px;
+  border-left: 1px solid whitesmoke;
+  margin-right: 15px;
+}
+.main .contentUtil li:first-child::before {
+  border-left: none;
+}
+.main .contentUtil p {
+  display: block;
+  margin: 10px;
+}
+.main .contentUtil p button {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-color: silver;
+}
+.main .contentUtil button i {
+  font-weight: 700;
+}
+
+.main .boardSearch {
+  left: 66%;
+  top: 25%;
+}
+.main .boardSearch #searchKey {
+  width: 100px;
+  height: 40px;
+  text-indent: 10px;
+  outline: none;
+}
+.main .boardSearch #searchWord {
+  width: 200px;
+  height: 35px;
+  outline: none;
+  margin-left: 5px;
+}
+.main .boardSearch .btnSubmit {
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  margin-left: -6px;
+  padding-bottom: 3px;
+  background: rgba(36, 51, 255, 0.8);
+  color: white;
+  border: none;
+}
+
+.main .bbs {
+  width: 1200px;
+  margin: auto;
+  left: 7%;
+  top: 30%;
+}
+.main .bbs .tb {
+  width: 100%;
+}
+.main .bbs .tb .w1 {
+  width: 50px;
+}
+.main .bbs .tb .w2 {
+  width: auto;
+}
+.main .bbs .tb .w3 {
+  width: 105px;
+}
+.main .bbs .tb .w4 {
+  width: 65px;
+}
+.main .bbs .tb .w5 {
+  width: 60px;
+}
+
+.main .bbs .tb th,
+.bbs .tb td {
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid silver;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main .bbs .tb thead tr th {
+  font-size: 18px;
+  border-top: 3px solid #000;
+  padding: 10px 0;
+}
+
+.main .bbs .tb tbody td {
+  border: none;
+  border-top: 1px solid silver;
+}
+.main .bbs .tb tbody td:nth-child(2) {
+  text-align: left;
+  text-indent: 20px;
+  font-size: 16px;
+}
+.main .bbs .tb tbody tr:last-child td {
+  border-bottom: 3px solid #000;
+}
+
+.main .paging {
+  text-align: center;
+  margin: 40px;
+}
+.main .paging a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid silver;
+}
+.main .paging a.on {
+  background: blue;
+  color: white;
+  margin: 0px 10px;
+}
+
+.main .viewTitle {
+  text-align: center;
+}
+.main .viewTitle:first-child {
+  font-size: 20px;
+}
+.main .viewTitle h3::before {
+  content: "";
+  border-bottom: 2px solid #000;
+  display: block;
+  margin-bottom: 40px;
+}
+.main .viewTitle h3 {
+  padding-top: 250px;
+}
+.main .viewTitle div span:before,
+.main .viewTitle div span > .b {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 11px;
+  margin: 15px;
+  background-color: #ccc;
+}
+.main .viewTitle .date {
+  margin-top: 30px;
+  color: #666;
+  font-size: 16px;
+}
+
+.main .viewTitle .date::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+.main .viewContent {
+  padding: 5% 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.main .viewContent p {
+  margin-top: 20px;
+  margin-left: 90px;
+  font-size: 20px;
+}
+.main .viewContent div {
+  margin-left: 90px;
+}
+.main .viewContent strong {
+  font-weight: 700;
+}
+
+/* viewNavWrap */
+.main .viewNavWrap {
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+.main .viewNavWrap div {
+  padding: 18px 30px;
+}
+.main .viewNavWrap div + div {
+  border-top: 1px solid #ccc;
+}
+.main .viewNavWrap em {
+  position: relative;
+  vertical-align: top;
+  margin-right: 30px;
+  padding-right: 32px;
+  color: #666;
+  font-weight: 400;
+}
+.main .viewNavWrap em:after,
+.main .viewNavWrap em > .a {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 11px;
+  margin-top: -5.5px;
+  background-color: #ccc;
+}
+.main .viewNavWrap a,
+.main .viewNavWrap span {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  max-width: 84%;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#container.main.h600 .logo {
+  padding: 30px 0;
+}
+
+.main .next {
+  padding: 60px 0;
+}
+
+.main .btnWrap {
+  position: absolute;
+  left: 95%;
+  bottom: 3%;
+}
+.main .btnWrap .btnType01 {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  width: 70px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.main .overview {
+  position: relative;
+}
+.main .overview .inner {
+  padding: 0 50px;
+  height: 2200px;
+}
+.main .overview h2 {
+  padding-top: 120px;
+}
+.main .overview h3 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.main .overview img:first-of-type {
+  width: 1280px;
+  display: block;
+}
+.main .overview img:nth-of-type(2) {
+  padding-left: 300px;
+  width: 700px;
+}
+.main .overview img:last-child {
+  padding-left: 300px;
+}
+.main .overview strong {
+  font-size: 36px;
+  font-weight: 300;
+  display: block;
+  padding-top: 45px;
+}
+.main .overview p {
+  font-size: 18px;
+  padding-top: 15px;
+}
+.main .overview p em {
+  color: #3566ca;
+}
+.main .overview span {
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  padding-top: 30px;
+}
+
+.main .errorContent {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 850px;
+  height: 625px;
+}
+.main .errorContent .logo a {
+  display: inline-block;
+}
+.main .errorContent .errorBox {
+  margin: 20px 0;
+  padding: 135px 0 40px;
+  border: 1px solid #000;
+  border-width: 2px 0 1px;
+}
+.main .errorContent .errorBox strong {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+.main .errorContent .errorBox p {
+  display: block;
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+.main .errorContent .errorBox img {
+  position: absolute;
+  left: 45%;
+  top: 20%;
+}
+.main .errorContent .errorBtn {
+  margin: 60px 0;
+  text-align: center;
+}
+.main .errorContent .errorBtn .e1 {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  background-color: #3566ca;
+  color: white;
+  font-weight: 700;
+}
+.main .errorContent .errorBtn .e2 {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  background-color: #3566ca;
+  color: white;
+  font-weight: 700;
+}
+
+.main .promise {
+  width: 1100px;
+  padding: 250px 0px 0px 0px;
+  margin: auto;
+}
+
+.main .promise .proBox strong {
+  display: block;
+  position: absolute;
+  left: 15%;
+  top: 27%;
+  font-size: 28px;
+  font-weight: 600;
+}
+.main .promise .proBox p {
+  position: absolute;
+  left: 15%;
+  top: 34%;
+  font-size: 20px;
+}
+.main .promise .proBox span {
+  color: blue;
+}
+.main .promise .promise2 {
+  margin: 40px 0;
+  line-height: 35px;
+  font-size: 18px;
+}
+.main .promise .promise2 strong {
+  color: blue;
+  font-weight: 600;
+}
+.main .promise .promise3 {
+  background: whitesmoke;
+  width: 960px;
+  padding: 30px 40px;
+}
+.main .promise .promise3 p {
+  font-size: 20px;
+}
+.main .promise .btnDown {
+  display: inline-block;
+  width: 230px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  margin: 40px 0;
+  background: #3566ca;
+  font-size: 18px;
+}
+.main .promise .btnDown span {
+  color: white;
+}
+.main .promise .btnDown i {
+  color: white;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+/* Project */
+
+#LogIn {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 1400px;
+  padding: 100px 0 100px 0;
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  height: 900px;
+}
+#LogIn .leftLogIn {
+  width: 590px;
+  height: 900px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 100px;
+  font-weight: bold;
+  margin-right: 30px;
+  position: absolute;
+  top: 100px;
+  left: -1225%;
+  z-index: 10;
+}
+#LogIn .memberLogin {
+  height: 160px;
+  padding-bottom: 20px;
+}
+#LogIn .memberLogin i {
+  padding-top: 30px;
+  font-size: 80px;
+}
+#LogIn .memberLogin h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+#LogIn .leftLogIn p {
+  font-size: 13px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #9f9292;
+}
+#LogIn .leftLogIn input[type="text"] {
+  width: 440px;
+  height: 50px;
+  text-indent: 20px;
+  margin-bottom: 5px;
+}
+#LogIn .leftLogIn input[type="password"] {
+  width: 440px;
+  height: 50px;
+  text-indent: 20px;
+  margin-bottom: 5px;
+}
+#LogIn .leftLogIn .login {
+  width: 446.22px;
+  height: 56px;
+  background: #9f9292;
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: 70px;
+}
+#LogIn .leftLogIn a {
+  text-align: center;
+  color: #9f9292;
+  position: relative;
+  margin-right: 20px;
+  text-decoration: none;
+}
+#LogIn .leftLogIn a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: #9f9292;
+  position: absolute;
+  right: -15px;
+  top: 28%;
+}
+#LogIn .leftLogIn a:last-of-type::after {
+  content: none;
+}
+#LogIn .leftLogIn .naverLogIn {
+  width: 446.22px;
+  height: 56px;
+  font-weight: 700;
+  margin-top: 25px;
+  background: #fff;
+  color: #000;
+  border: 1px solid greenyellow;
+  position: relative;
+  text-indent: 30px;
+  font-size: 13px;
+}
+#LogIn .leftLogIn .naverLogIn img {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+#LogIn .leftLogIn .ReservationAndcall {
+  margin: auto;
+  margin-top: 30px;
+  width: 446.22px;
+  height: 150px;
+  border: 1px solid darkgray;
+  box-sizing: border-box;
+}
+#LogIn .leftLogIn .ReservationAndcall p {
+  text-align: left;
+  text-indent: 20px;
+}
+#LogIn .leftLogIn .ReservationAndcall strong {
+  color: #4067f2;
+  padding-right: 90px;
+  padding-bottom: 50px;
+  font-size: 24px;
+}
+
+#LogIn .rightLogIn {
+  width: 590px;
+  margin: auto;
+  height: 900px;
+  align-self: flex-end;
+  text-align: center;
+  padding-bottom: 100px;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 0;
+  position: absolute;
+  top: 100px;
+  left: 1225%;
+  z-index: 10;
+}
+#LogIn .non-memberLogin {
+  height: 180px;
+}
+#LogIn .non-memberLogin i {
+  padding-top: 30px;
+  font-size: 80px;
+}
+#LogIn .non-memberLogin h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+#LogIn .rightLogIn p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #9f9292;
+}
+#LogIn .rightLogIn input[type="text"] {
+  margin: 0 5px 5px 0;
+}
+#LogIn .rightLogIn .name {
+  width: 220px;
+  height: 50px;
+  text-indent: 20px;
+}
+#LogIn .rightLogIn .callNumber {
+  width: 390px;
+  height: 50px;
+  text-indent: 20px;
+}
+#LogIn .rightLogIn .Approval {
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 4px;
+  width: 56px;
+  height: 54.2px;
+  border: none;
+  font-weight: 700;
+}
+#LogIn .rightLogIn .Authentication_Number {
+  width: 458px;
+  height: 50px;
+  margin-bottom: 10px;
+  text-indent: 20px;
+}
+#LogIn .rightLogIn .textarea {
+  width: 462px;
+  height: 60px;
+  display: block;
+  margin: auto;
+  text-indent: 20px;
+}
+#LogIn .rightLogIn .personal_information {
+  margin: 15px auto;
+  width: 462px;
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#LogIn .rightLogIn .personal_information #Consent_To_use {
+  margin: 0 10px 0 10px;
+  width: 35px;
+  height: 35px;
+}
+#LogIn .rightLogIn .nonlogin {
+  display: block;
+  color: #9f9292;
+  width: 468px;
+  height: 56px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #9f9292;
+}
+#LogIn .rightLogIn .forgot_The_Number {
+  display: block;
+  margin-top: 15px;
+  color: #9f9292;
+}
+.Subscription_image {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+.Subscription_image li {
+  width: 450px;
+  height: 450px;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #b0b4d8;
+  color: #fff;
+  margin-right: 20px;
+}
+.Subscription_image li i {
+  font-size: 150px;
+}
+.Subscription_image li:hover i,
+.Subscription_image li:hover {
+  color: yellow;
+  transition: 0.8s;
+}
+
+/* login 2page */
+.inner {
+  width: 1400px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.First_stage_of_membership_registration h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 80px;
+  color: #000;
+  margin-top: 250px;
+}
+.subscription1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.subscription1 li {
+  width: 440px;
+  height: 130px;
+  align-items: center;
+  display: flex;
+  padding-left: 40px;
+  border: 1px solid #5b4f4f;
+  background: #f5f5f5;
+}
+.subscription1 li:first-child {
+  color: #fff;
+  background: #4067f2;
+}
+.Hospital_introduction {
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.Hospital_introduction img {
+  width: 400px;
+  height: 250px;
+  margin-right: 30px;
+}
+.Hospital_introduction .text_introduction {
+  width: 900px;
+  height: 270px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Hospital_introduction .text_introduction strong {
+  color: #000;
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.Hospital_introduction .text_introduction p {
+  color: #9f9292;
+  width: 950px;
+  height: 280px;
+  font-size: 22px;
+}
+.Hospital_introduction p span {
+  color: #4067f2;
+}
+.Agree_to_join {
+  width: 1400px;
+  height: 110px;
+  background: #f5f5f5;
+  text-align: center;
+  margin: auto;
+  line-height: 4.8;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+.Agree_to_join #Agree_to_join_checkbox {
+  width: 25px;
+  height: 25px;
+  transform: translateY(10%);
+}
+.Agree_to_join .Agree_to_join_text {
+  color: #000;
+}
+.First_stage_of_membership_registration h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.First_stage_of_membership_registration h3 > span {
+  color: #4067f2;
+}
+.Terms_and_Conditions {
+  width: 1400px;
+  height: 370px;
+  padding-top: 50px;
+  font-size: 0;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 180px;
+}
+.Terms_and_Conditions .general_provisions {
+  width: 100%;
+  height: 260px;
+  font-weight: 600;
+  padding-top: 80px;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 2;
+  box-sizing: border-box;
+}
+.Terms_and_Conditions .Acceptance_of_Terms_and_Conditions {
+  box-sizing: border-box;
+  width: 100%;
+  height: 110px;
+  border: 1px solid #000;
+  border-top: none;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 4.8;
+  text-align: left;
+}
+.Terms_and_Conditions
+  .Acceptance_of_Terms_and_Conditions
+  #Acceptance_of_Terms_and_Conditions_checkbox {
+  width: 25px;
+  height: 25px;
+  transform: translateY(10%);
+  margin-left: 40px;
+}
+.Personal_information {
+  width: 1400px;
+  height: 370px;
+  padding-top: 50px;
+  font-size: 0;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 180px;
+}
+.Personal_information .Purpose_of_use_of_personal_information {
+  width: 100%;
+  height: 260px;
+  font-weight: 600;
+  padding-top: 80px;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 2;
+  box-sizing: border-box;
+}
+.Personal_information .Consent_to_personal_information {
+  box-sizing: border-box;
+  width: 100%;
+  height: 110px;
+  border: 1px solid #000;
+  border-top: none;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 4.8;
+  text-align: left;
+}
+.Personal_information
+  .Consent_to_personal_information
+  #Consent_to_personal_information_checkbox {
+  width: 25px;
+  height: 25px;
+  transform: translateY(10%);
+  margin-left: 40px;
+}
+.the_right_to_refuse_consent {
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+.the_right_to_refuse_consent h3 {
+  font-size: 28px;
+  color: #000;
+  padding-bottom: 30px;
+}
+.the_right_to_refuse_consent p {
+  font-size: 20px;
+  color: #000;
+}
+.Agree_all_to_join {
+  width: 100%;
+  height: 110px;
+  background: #f5f5f5;
+  text-align: center;
+  margin: auto;
+  line-height: 4.8;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.Agree_all_to_join #Agree_all_to_join_checkbox {
+  width: 25px;
+  height: 25px;
+  transform: translateY(10%);
+}
+.Agree_all_to_join .Agree_all_to_join_checkbox_text {
+  color: #000;
+}
+.the_registration_process {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
+}
+.the_registration_process li::after {
+  content: ">";
+  font-size: 50px;
+  color: #e5e0e0;
+  position: absolute;
+  top: 25%;
+  transform: translateX(1000%);
+}
+.the_registration_process li:last-of-type:after {
+  content: none;
+}
+.the_registration_process li button {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f5f5f5;
+  background: #f5f5f5;
+  border-radius: 50%;
+}
+.the_registration_process li button.on {
+  background: darkgray;
+}
+.the_registration_process li button i {
+  font-size: 50px;
+  color: #e5e0e0;
+}
+.the_registration_process li button i.on {
+  font-size: 50px;
+  color: yellow;
+  transform: scale(3);
+  transition: 0.8s;
+  transform: rotate(360deg);
+}
+.the_registration_process li p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.move_page {
+  margin: 100px 0 250px 0;
+  text-align: right;
+}
+.mainpage {
+  width: 200px;
+  height: 100px;
+  background: #9f9292;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  margin-right: 80px;
+}
+.nextpage {
+  width: 200px;
+  height: 100px;
+  background: #4067f2;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+}
+.registration_number_tr {
+  display: none;
+}
+.consultation_number_tr {
+  display: none;
+}
+
+/* login 3page */
+.inner {
+  width: 1400px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.Medical_membership_certification {
+  padding-top: 100px;
+  position: relative;
+  box-sizing: border-box;
+}
+.Medical_membership_certification h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.Medical_membership_certification ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+.Medical_membership_certification ul li {
+  width: 460px;
+  height: 60px;
+  background: #f5f5f5;
+  border: 1px solid #5b4f4f;
+  color: #5b4f4f;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.Medical_membership_certification ul li.on {
+  color: #fff;
+  background: #4067f2;
+}
+.Identification_check {
+  border-top: 3px solid #5b4f4f;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
+  display: none;
+}
+.Identification_check tr td {
+  border-bottom: 3px solid #5b4f4f;
+  vertical-align: middle;
+  padding: 20px 0 20px 0;
+}
+.Identification_check tr td:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  color: darkgray;
+  width: 160px;
+  text-align: center;
+}
+.Identification_check tr td:nth-child(2) {
+  padding-left: 30px;
+  width: 1250px;
+}
+.Identification_check tr:nth-child(2) td:nth-child(2) input[type="text"] {
+  width: 255px;
+}
+.Identification_check tr td .Unique_number {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.Identification_check tr td label {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  vertical-align: middle;
+}
+.Identification_check tr td p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4067f2;
+  padding-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Identification_check tr td button {
+  width: 170px;
+  height: 50px;
+  border: 1px solid #5b4f4f;
+  background: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.Identification_check input[type="text"] {
+  height: 50px;
+  vertical-align: middle;
+  font-size: 30px;
+  font-weight: 700;
+}
+.Identification_check .registration_number {
+  width: 150px;
+}
+.Identification_check .phone_number_authentication {
+  width: 150px;
+}
+.Identification_check .phone_Number_Input__Certified {
+  width: 250px;
+}
+.Identification_check .Medical_membership_certification.on {
+  display: block;
+}
+.Identification_check.on {
+  display: block;
+}
+
+.Identification_check #View_hidden_information {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+p .Authenticating {
+  width: 160px;
+  height: 85px;
+  background: #4067f2;
+  color: #f5f5f5;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  margin-top: 30px;
+  position: absolute;
+  top: 26%;
+  right: 0%;
+}
+.second_stage_of_membership_registration h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 80px;
+  color: #000;
+  margin-top: 220px;
+}
+.subscription2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.subscription2 li {
+  width: 440px;
+  height: 130px;
+  background: #f5f5f5;
+  border: 1px solid #5b4f4f;
+  color: #5b4f4f;
+  align-items: center;
+  display: flex;
+  padding-left: 40px;
+}
+.subscription2 li:nth-child(2) {
+  color: #fff;
+  background: #4067f2;
+}
+.second_stage_of_membership_registration strong {
+  margin-top: 80px;
+  font-size: 24px;
+  font-weight: 700;
+  color: darkgray;
+}
+.second_stage_of_membership_registration em {
+  color: red;
+}
+.join_membership {
+  width: 100%;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 300px;
+}
+.join_membership tr td {
+  vertical-align: middle;
+  padding: 20px 0 20px 0;
+}
+.join_membership tr td:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  color: darkgrey;
+  text-align: left;
+  text-indent: 20px;
+}
+.join_membership tr:last-child td:nth-child(1) {
+  color: #4067f2;
+  text-align: center;
+  text-indent: 0;
+  padding-right: 20px;
+}
+.join_membership tr:nth-child(1) td:nth-child(2) button {
+  width: 120px;
+  height: 54.9px;
+  font-size: 22px;
+  font-weight: 700;
+  vertical-align: middle;
+  background: #fff;
+  margin-right: 15px;
+  border: 1px solid lightgray;
+}
+.join_membership p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4067f2;
+  display: inline-block;
+  vertical-align: middle;
+}
+.join_membership span {
+  color: red;
+}
+.join_membership input[type="text"] {
+  width: 255px;
+  height: 50px;
+  margin: 5px;
+  text-indent: 20px;
+  font-size: 22px;
+}
+.join_membership input[type="password"] {
+  width: 255px;
+  height: 50px;
+  margin: 5px;
+  text-indent: 20px;
+  font-size: 22px;
+}
+
+.join_membership tr td .the_rest_of_the_address {
+  width: 540px;
+  margin: 5px;
+}
+.join_membership tr td .phone_Number_Input {
+  width: 130px;
+  margin: 5px;
+}
+.join_membership tr td .Additional_Contacts {
+  width: 130px;
+  margin: 5px;
+}
+.join_membership #E-mail_address {
+  width: 250px;
+  height: 55px;
+  font-size: 22px;
+  font-weight: 700;
+  color: darkgray;
+  text-indent: 20px;
+}
+.join_membership #date_of_birth {
+  width: 130px;
+  height: 56px;
+  font-size: 22px;
+  font-weight: 700;
+  color: darkgray;
+  vertical-align: middle;
+  text-indent: 20px;
+}
+.join_membership #Naver_ID {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.join_membership .Naver_ID {
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: middle;
+  color: #000;
+}
+.join_membership .naver_button {
+  width: 150px;
+  height: 60px;
+  font-size: 22px;
+  font-weight: 700;
+  background: #fff;
+  vertical-align: middle;
+  border: 1px solid lightgray;
+}
+.join_membership .Find_Address_button {
+  width: 130px;
+  height: 54.9px;
+  vertical-align: middle;
+  background: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  color: darkgrey;
+  border: 1px solid lightgray;
+}
+.join_membership .gender {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.join_membership .sexual {
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.join_membership .Auto_preventive_characters {
+  width: 280px;
+  height: 140px;
+  border: 1px solid #5b4f4f;
+}
+.join_membership .Auto_preventive_characters p {
+  font-size: 38px;
+  font-weight: 700;
+  color: #4067f2;
+  line-height: 3.5;
+}
+.join_membership #information_retention_deadline {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.join_membership .Keeping_personal_information {
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.Sign_up_button {
+  width: 160px;
+  height: 85px;
+  background: #4067f2;
+  color: #f5f5f5;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  margin-top: 30px;
+  position: absolute;
+  bottom: -4%;
+  right: 0;
+}
+/* login 4page */
+.inner {
+  width: 1400px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.sign_up_complete h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 80px;
+  color: #000;
+  margin-top: 250px;
+}
+.subscription3 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.subscription3 li {
+  width: 440px;
+  height: 130px;
+  border: 1px solid #5b4f4f;
+  align-items: center;
+  display: flex;
+  padding-left: 40px;
+  background: #f5f5f5;
+}
+.subscription3 li:last-child {
+  color: #fff;
+  background: #4067f2;
+}
+.Sign_up_complete h2 {
+  margin: 65px 0 50px 0;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+}
+.Sign_up_complete p {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #9f9292;
+  font-size: 24px;
+  font-weight: 700;
+}
+.Sign_up_and_log_in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Sign_up_and_log_in input[type="text"] {
+  width: 440px;
+  height: 50px;
+  text-indent: 20px;
+  margin-bottom: 5px;
+}
+.Sign_up_and_log_in .login {
+  width: 446.98px;
+  height: 56px;
+  background: #9f9292;
+  color: #fff;
+  border: none;
+  margin-bottom: 5px;
+}
+.Sign_up_and_log_in .With_the_main_banner {
+  width: 446.98px;
+  height: 56px;
+  background: #fff;
+  color: #9f9292;
+  border: 1px solid #9f9292;
+  margin-bottom: 50px;
+}
+.nonmember {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  position: relative;
+}
+.nonmember button {
+  width: 250px;
+  height: 75px;
+  margin-left: 20px;
+  background: #4067f2;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.nonmember p {
+  font-weight: 700;
+  font-size: 17px;
+  padding: 15px 0 0 20px;
+}
+.nonmember a {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #9f9292;
+}
+/* login2.popup */
+.additional_information {
+  display: none;
+}
+.additional_information.on {
+  display: block;
+}
+.number2 {
+  margin: auto;
+  margin-top: 80px;
+  border: 1px solid #000;
+  width: 600px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.number2 img {
+  width: 25%;
+  height: 25%;
+  margin: 0 25px;
+}
+.number2 .number-text {
+  width: 75%;
+}
+.number2 .number-text strong {
+  font-size: 30px;
+  font-weight: 700;
+  color: darkgray;
+}
+.number2 .number-text p {
+  color: #4067f2;
+  font-size: 24px;
+  font-weight: 700;
+}
+.number3 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  height: 400px;
+  width: 400px;
+  box-sizing: border-box;
+  background: #f5f5f5;
+}
+.number3 strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: gray;
+  padding-bottom: 30px;
+}
+.number3 p {
+  font-size: 12px;
+  font-weight: 700;
+  color: lightgray;
+  padding-bottom: 30px;
+}
+.number3 .app_code {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.number3 .app_code strong {
+  font-size: 30px;
+  font-weight: 700;
+  color: gray;
+}
+.number3 p {
+  font-size: 14px;
+  font-weight: 700;
+  color: gray;
+}
+.number3 .app_code img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+/* for sending  송부용 */
+
+/* ReservationInfo */
+#mainfo .inner {
+  display: flex;
+  position: relative;
+}
+.inner .content10 {
+  width: 1020px;
+  height: 100%;
+  background: white;
+  padding-top: 100px;
+  box-sizing: border-box;
+  color: #000;
+  margin: auto;
+  margin-top: 180px;
+}
+.inner .content10 .contUtilMenuWrap {
+  position: relative;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.inner .content10 .contUtilMenuWrap h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.inner .content10 .contUtilMenuWrap .contUtilMenu {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  color: #bbb;
+}
+.inner .content10 .contUtilMenuWrap .contUtilMenu li {
+  font-size: 16px;
+  display: inline-block;
+  line-height: 30px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+.inner .content10 .contUtilMenuWrap .contUtilMenu li:nth-child(1)::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background: #ccc;
+  position: absolute;
+  left: 58px;
+  top: 50%;
+  transform: translateY(-40%);
+}
+.inner .content10 .contUtilMenuWrap .contUtilMenu li:nth-child(2)::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background: #ccc;
+  position: absolute;
+  left: 140px;
+  top: 50%;
+  transform: translateY(-40%);
+}
+.inner .content10 .contUtilMenuWrap .contUtilMenu li:nth-child(5) {
+  margin-left: 0px;
+}
+.inner .content10 .contUtilMenuWrap .contUtilMenu li button {
+  line-height: 30px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+.inner .content10 .contUtilMenuWrap .contUtilMenu li i {
+  color: #aaa;
+  position: relative;
+}
+.inner .content10 .contUtilMenuWrap + img {
+  width: 1020px;
+  height: 260px;
+  margin-top: 80px;
+}
+.inner .content10 h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.inner .content10 p {
+  font-size: 20px;
+}
+.inner .content10 span {
+  font-size: 18px;
+}
+.inner .reservationGuide {
+  position: relative;
+}
+.inner .reservationGuide ul {
+  display: block;
+  position: relative;
+}
+.inner .reservationGuide ul .skin01 {
+  margin-top: 30px;
+  position: relative;
+  left: 125px;
+  display: block;
+}
+.inner .reservationGuide ul em {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: block;
+}
+.inner .reservationGuide ul p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.inner .reservationGuide ul p span {
+  font-size: 18px;
+  color: blue;
+}
+.inner .reservationGuide ul p span a {
+  font-size: 18px;
+  font-weight: 600;
+}
+.inner .reservationGuide ul li ul {
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+.inner .reservationGuide ul li ul li {
+  font-size: 18px;
+  line-height: 30px;
+}
+.inner .reservationGuide .skin01 span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.inner .reservationGuide ul .skin01::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/for_sending/spr_reservation.png);
+  background-size: cover;
+  position: absolute;
+  background-position: 0px;
+  box-sizing: border-box;
+  left: -125px;
+  top: -10px;
+  margin-top: 20px;
+}
+.inner .reservationGuide .skin02 {
+  margin-top: 30px;
+  position: relative;
+  left: 125px;
+}
+.inner .reservationGuide ul .skin02::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/for_sending/spr_reservation.png);
+  background-size: cover;
+  background-position: -103px;
+  box-sizing: border-box;
+  position: absolute;
+  left: -125px;
+  top: -10px;
+  margin-top: 20px;
+}
+
+.inner .reservationGuide .skin03 {
+  margin-top: 30px;
+  position: relative;
+  left: 125px;
+}
+
+.inner .reservationGuide .skin03 button {
+  margin-top: 20px;
+  background: rgb(36, 70, 221);
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.inner .reservationGuide ul .skin03::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/for_sending/spr_reservation.png);
+  background-size: cover;
+  background-position: -205px;
+  box-sizing: border-box;
+  position: absolute;
+  left: -125px;
+  top: -10px;
+  margin-top: 20px;
+}
+.inner .reservationGuide .skin04 {
+  margin-top: 30px;
+  position: relative;
+  left: 125px;
+}
+
+.inner .reservationGuide ul .skin04::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/for_sending/spr_reservation.png);
+  background-size: cover;
+  background-position: -308px;
+  box-sizing: border-box;
+  position: absolute;
+  left: -125px;
+  top: -10px;
+  margin-top: 20px;
+}
+.inner .reservationGuide .skin05 {
+  margin-top: 30px;
+  position: relative;
+  left: 125px;
+}
+.inner .reservationGuide ul .skin05::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/for_sending/spr_reservation.png);
+  background-size: cover;
+  background-position: -411px;
+  box-sizing: border-box;
+  position: absolute;
+  left: -125px;
+  top: -10px;
+  margin-top: 20px;
+}
+#mainfo .inner .reservationGuide ul .skin05 p + span {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-top: 5px;
+}
+#mainfo .inner .cancel ul {
+  position: relative;
+}
+#mainfo .inner .cancel ul li {
+  position: absolute;
+  left: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  position: relative;
+}
+#mainfo .inner .cancel ul li span {
+  font-size: 16px;
+  color: blue;
+}
+#mainfo .inner .cancel ul li a {
+  font-size: 16px;
+  cursor: pointer;
+}
+#mainfo .inner .cancel ul li::after {
+  content: "";
+  width: 5px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: -10px;
+  top: 11px;
+}
+.surbeyForm {
+  margin-top: 60px;
+  width: 1020px;
+  height: 300px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-top: 25px;
+  position: relative;
+  border-top: 2px solid blue;
+  margin-bottom: 60px;
+}
+.surbeyForm p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.surbeyForm input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.surbeyForm label {
+  font-size: 18px;
+  margin-right: 30px;
+}
+.surbeyForm .etcInput {
+  margin-top: 20px;
+}
+.surbeyForm input[type="text"] {
+  width: 500px;
+  height: 25px;
+  vertical-align: middle;
+}
+.surbeyForm .surbeySubmit {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+  width: 140px;
+  height: 100px;
+  font-size: 20px;
+  background: blue;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+.etcUtil {
+  border-top: 1px solid #ccc;
+  width: 1020px;
+  height: 80px;
+  box-sizing: border-box;
+  margin-left: -25px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.etcUtil span {
+  margin-right: 30px;
+  position: relative;
+}
+.etcUtil span:nth-child(1)::after {
+  content: "";
+  width: 2px;
+  height: 12px;
+  background: #ccc;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.etcUtil span:nth-child(2) {
+  margin-right: 200px;
+}
+.etcUtil a {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.etcUtil a:nth-child(1) i {
+  color: blue;
+}
+#mainfo .inner .aside {
+  width: 280px;
+  height: 100%;
+  background: white;
+  position: fixed;
+  right: 120px;
+  top: 100px;
+}
+#mainfo .inner .aside.on {
+  width: 280px;
+  height: 100%;
+  background: white;
+  position: fixed;
+  right: 120px;
+}
+.inner .aside .relationContent {
+  position: relative;
+  margin-top: 100px;
+}
+.inner .aside .relationContent h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.inner .aside .relationContent ul li {
+  font-size: 18px;
+  margin-left: 5px;
+  position: relative;
+}
+.inner .aside .relationContent ul li a {
+  font-size: 16px;
+}
+.inner .aside .relationContent ul li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inner .aside .service {
+  margin-top: 40px;
+}
+.inner .aside .service h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.inner .aside .service ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.inner .aside .service ul li {
+  margin-right: 10px;
+  line-height: 0.5;
+}
+.inner .aside .service ul li a {
+  font-size: 16px;
+  color: blue;
+}
+.inner .aside .call {
+  width: 250px;
+  height: 80px;
+  border: 1px solid #000;
+  padding-left: 80px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.inner .aside .call span {
+  font-size: 16px;
+  line-height: 1;
+}
+.inner .aside .call strong {
+  font-size: 22px;
+  display: block;
+  line-height: 0.7;
+}
+.inner .aside .call span::after {
+  content: "";
+  background: url(../images/for_sending/spr_common.png) no-repeat -424px -50px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.inner .aside img {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/* treatRequest. */
+#mainfo .content10 .medicalCaseInfo {
+  display: block;
+  margin-top: 60px;
+}
+#mainfo .content10 .medicalCaseInfo p {
+  font-size: 24px;
+  font-weight: 600;
+}
+#mainfo .content10 .medicalCaseInfo span {
+  font-size: 20px;
+  display: block;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+#mainfo .content10 .medicalCaseInfo em {
+  font-size: 20px;
+  color: blue;
+  display: block;
+}
+#mainfo .content10 .medicalCase {
+  margin-top: 30px;
+}
+
+#mainfo .content10 .medicalCase ul li {
+  margin-bottom: 40px;
+}
+#mainfo .content10 .medicalCase ul li span {
+  font-size: 22px;
+  font-weight: 700;
+  color: blue;
+  display: block;
+  margin-bottom: 15px;
+}
+#mainfo .content10 .medicalCase ul li span em {
+  font-weight: 600;
+  color: black;
+}
+#mainfo .content10 .medicalCase ul li p {
+  text-indent: 15px;
+}
+#mainfo .content10 .treatFaq {
+  margin-bottom: 100px;
+}
+#mainfo .content10 .treatFaq ul li {
+  margin-bottom: 40px;
+}
+#mainfo .content10 .treatFaq ul li strong {
+  font-size: 22px;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+#mainfo .content10 .treatFaq ul li p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+#mainfo .content10 .treatFaq ul li em {
+  font-size: 18px;
+  display: block;
+  margin-left: 20px;
+  text-indent: -20px;
+  color: #303030;
+}
+
+/* parkingInfo. */
+#mainfo .inner .content10 .parkingMap {
+  width: 100%;
+  height: 870px;
+  display: block;
+}
+
+#mainfo .inner .content10 .parkingScale ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#mainfo .inner .content10 .parkingScale ul li {
+  width: 500px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background: #e8e8e5;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+#mainfo .inner .content10 .parkingScale ul li img {
+  width: 500px;
+  height: 300px;
+}
+#mainfo .inner .content10 .parkingScale ul li strong {
+  padding-top: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+}
+#mainfo .inner .content10 .parkingScale ul li em {
+  font-size: 18px;
+  padding-left: 30px;
+}
+#mainfo .inner .content10 .parkingScale ul li i {
+  margin-left: 30px;
+  padding-top: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#mainfo .inner .content10 .parkingCharge thead th {
+  border-top: 2px solid #000;
+  background: #ececec;
+}
+#mainfo .inner .content10 .parkingCharge tr {
+  text-align: center;
+  font-size: 18px;
+}
+
+#mainfo .inner .content10 .parkingCharge th,
+td {
+  border: 1px solid #cacaca;
+  vertical-align: middle;
+  padding: 15px 0;
+  line-height: 1.6;
+}
+.ww1,
+.ww2,
+.ww3 {
+  width: 340px;
+}
+
+#mainfo .inner .content10 .chareDiscount table {
+  margin-bottom: 20px;
+}
+#mainfo .inner .content10 .chareDiscount thead th {
+  border-top: 2px solid #000;
+  background: #ececec;
+}
+#mainfo .inner .content10 .chareDiscount tr {
+  text-align: center;
+  font-size: 18px;
+}
+#mainfo .inner .content10 .chareDiscount th,
+td {
+  border: 1px solid #cacaca;
+  vertical-align: middle;
+  padding: 15px 0;
+  line-height: 1.6;
+}
+#mainfo .inner .content10 .chareDiscount table tbody td:nth-child(1) {
+  text-align-last: left;
+  padding-left: 25px;
+}
+#mainfo .inner .content10 .chareDiscount table tbody td:nth-child(1) p {
+  position: relative;
+}
+#mainfo .inner .content10 .chareDiscount table tbody td:nth-child(1) p::before {
+  content: "";
+  width: 6px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: -13px;
+  top: 15px;
+}
+#mainfo .inner .content10 .chareDiscount .discountReference p {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+#mainfo .inner .content10 .chareDiscount .discountReference p::before {
+  content: "";
+  width: 6px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: -13px;
+  top: 15px;
+}
+
+.ww4 {
+  width: 520px;
+}
+.ww5 {
+  width: 160px;
+}
+.ww6 {
+  width: 340px;
+}
+
+#mainfo .inner .content10 .infoTel strong {
+  font-size: 20px;
+  display: block;
+  margin-left: 20px;
+  position: relative;
+  margin-bottom: 5px;
+}
+#mainfo .inner .content10 .infoTel strong::before {
+  content: "";
+  width: 6px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: -13px;
+  top: 15px;
+}
+#mainfo .inner .content10 .infoTel strong span {
+  font-size: 20px;
+  color: blue;
+}
+
+#wrap .moreBg.on {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #616161;
+  opacity: 0.5;
+  z-index: 10000;
+}
+#mainfo .inner .parkingPopup {
+  width: 1000px;
+  height: 780px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  z-index: 100000;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: none;
+}
+#mainfo .inner .parkingPopup.on {
+  display: block;
+}
+#mainfo .inner .parkingPopup .popupHeader {
+  display: flex;
+  width: 100%;
+  background: blue;
+}
+#mainfo .inner .parkingPopup .popupHeader h2 {
+  width: 100%;
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 80px;
+  text-indent: 40px;
+}
+#mainfo .inner .parkingPopup .popupHeader button {
+  margin-right: 10px;
+  width: 80px;
+  font-size: 40px;
+  background: blue;
+  color: white;
+  border: none;
+}
+
+#mainfo .inner .parkingPopup .floorSelect {
+  padding-left: 60px;
+  margin-top: 50px;
+  width: 900px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+#mainfo .inner .parkingPopup .floorSelect ul {
+  display: flex;
+  margin-bottom: 50px;
+}
+#mainfo .inner .parkingPopup .floorSelect ul li {
+  border: 2px solid #ededed;
+  margin-right: -2px;
+  width: 180px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+#mainfo .inner .parkingPopup .floorSelect ul li.on {
+  background: blue;
+  color: white;
+  font-weight: 600;
+}
+
+/* 푸터 */
+
+#footer {
+  width: 100%;
+  border: 1px solid #999;
+}
+
+#footer .inner .footer-family {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+}
+
+#footer .inner .family-list {
+  display: flex;
+  width: 1000px;
+  justify-content: space-around;
+}
+
+#footer .inner .family-list li {
+  box-sizing: border-box;
+  padding-top: 15px;
+}
+
+#footer .inner .family-list li.on a {
+  font-weight: 600;
+  color: cornflowerblue;
+}
+
+#footer .inner .family-list a {
+  font-size: 16px;
+  line-height: 1.6;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#footer .inner .family-icon {
+  width: 390px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer .inner .family-icon li {
+  margin-left: 13px;
+}
+
+#footer .inner .family-icon a {
+  font-size: 35px;
+  transition: 0.2s;
+}
+
+/* 아이콘 호버효과 */
+#footer .inner .family-icon li:nth-of-type(1) a:hover,
+#footer .inner .family-icon li:nth-of-type(2) a:hover {
+  color: #00d635;
+}
+
+#footer .inner .family-icon li:nth-of-type(3) a:hover {
+  color: red;
+}
+
+#footer .inner .family-icon li:nth-of-type(4) a:hover {
+  background: radial-gradient(
+      circle farthest-corner at 32% 106%,
+      #ffe17d 0%,
+      #ffcd69 10%,
+      #fa9137 28%,
+      #eb4141 42%,
+      transparent 82%
+    ),
+    linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+}
+
+#footer .inner .family-icon li:nth-of-type(5) a:hover {
+  color: #445d97;
+}
+
+#footer .inner .family-icon li:nth-of-type(6) a:hover {
+  color: #27a8e0;
+}
+
+/*  */
+
+#footer .inner .info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#footer .inner .info .info-list {
+  display: flex;
+  margin: 30px 0;
+}
+
+footer .inner .info .info-list li {
+  margin-right: 25px;
+}
+
+#footer .inner .info p {
+  font-size: 16px;
+}
+
+#footer .inner .info p:last-of-type {
+  margin-bottom: 25px;
+}
+
+.info .netbut {
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 8px;
+  right: 0;
+  top: 30px;
+}
+/* 푸터 */
+
+#footer .inner .info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#footer .inner .info .info-list {
+  display: flex;
+  margin: 30px 0;
+}
+
+footer .inner .info .info-list li {
+  margin-right: 25px;
+}
+
+#footer .inner .info p {
+  font-size: 16px;
+}
+
+#footer .inner .info p:last-of-type {
+  margin-bottom: 25px;
+}
+
+.info .netbut {
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 8px;
+  right: 0;
+  top: 30px;
+}
+/* 푸터 끝 */

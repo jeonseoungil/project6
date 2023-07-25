@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>세브란스병원</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/common/favicon.ico" />
+
+<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="inner">
+                <div class="top-logo">
+                    <a href="index.html" class="sublogo"><img src="images/index/nomal.jpg" alt="grouplogo"></a>
+                    <a href="index.html" class="mainlogo"><img src="images/index/sev_logo@2x.png" alt="logo"></a>
+                    <ul class="loginMenu">
+                        <li><a href="#">원격</a></li>
+                        <li><a href="login1.html">로그인</a></li>
+                        <li><a href="login2.html">회원가입</a></li>
+                        <li><select name="Language" id="Language_main">
+                            <option value="korean">korean</option>
+                            <option value="english">english</option>
+                            <option value="japansese">japansese</option>
+                            <option value="chinese">chinese</option>
+                        </select></li>
+                    </ul>
+                </div>
+                <div class="topMenu">
+                    <a href="#"><i class="xi-bars"></i></a>
+                    <!-- 메인 목록이 추가된다면 top-mainMenu 하위개체로 -->
+                    <ul class="top-mainMenu">
+                        <li>
+                            <a href="main1ResevationInfo.html">진료안내</a>
+                        </li>
+                        <li>
+                            <a href="main2parkingInfo.html">고객참여</a>
+                        </li>
+                        <li>
+                            <a href="work3.html">병원소개</a>
+                        </li>
+                    </ul>
+                    <a href="#"><i class="xi-search"></i></a>
+                    <!-- 마우스 올렸을때 스크롤 메뉴 -->
+                    <div class="scrollMenu">
+                        <ul class="scroll-1">
+                            <li><a href="main1ResevationInfo.html">예약안내</a></li>
+                            <li><a href="SearchDoc.html">의료진 찾기</a></li>
+                            <li><a href="work1.html">제증명 FAQ</a></li>
+                        </ul>
+                        <ul class="scroll-2">
+                            <li><a href="main2parkingInfo.html">주차안내</a></li>
+                            <li><a href="login1.html">로그인 예약</a></li>
+                            <li><a href="main2treatRequest.html">진료의뢰서</a></li>
+                        </ul>
+                        <ul class="scroll-3">
+                            <li><a href="work3.html">병원 소개</a></li>
+                            <li><a href="work4.html">연혁</a></li>
+                            <li><a href="work5.html">고객 헌장</a></li>
+                        </ul>
+                    </div>
+                    <div class="scrollImg">
+                        <div class="scrollImg-sub1 on">
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료.jpg" alt="" width="250px" height="200">
+                            </div>
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료1.jpg" alt="" width="400px" height="100px">
+                                <img src="./images/병원과진료2.jpg" alt="" width="400px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub2">
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자1.jpg" alt="" width="300px" height="100px">
+                            </div>
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자2.jpg" alt="" width="300px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub3">
+                            <div class="sub3-in">
+                                <img src="./images/병원.jpg" alt="" width="200" height="200">
+                            </div>
+                            <div class="sub3-in">
+                                <img src="./images/병원2.png" alt="" width="200" height="200" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-underMenu">
+                <div class="inner">
+                    <ul>
+                        <li><a href="index.html"><i class="xi-home"></i></a></li>
+                        <li><a href="login1.html">예약 조회</a></li>
+                        <li><a href="work3.html">병원 소개<i class=""></i></a></li>
+                        <li><a href="SearchDoc.html">의료진 소개<i class=""></i></a></i></li>
+                        <li><a href="work5.html">고객 헌장<i class=""></i></a></i></li>
+                    </ul>
+                    <ul>
+                        <li><a href="login1.html">예약</a></li>
+                        <li><a href="login1.html">비회원 예약</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_search_menu">
+                <div class="search_menu_bord_bg"></div>
+                <div class="search_menu_bord">
+                    <h2>찾으시는 내용을 검색하실 수 있습니다.</h2>
+                    <div class="search_menu_box">
+                        <input type="search" placeholder="검색할 내용을 입력하세요" class="input_search_menu">
+                        <button class="button_search_menu"><i class="xi-search"></i></button>
+                        <i class="xi-close"></i>
+                    </div>
+                    <ul class="search_menu_list"></ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- 메인 -->
+
+        <main id="main">
+            <div class="article">
+                <div class="uesrTypeMenu">
+                    <div class="patientMod on">
+                        <a href="#">
+                            <strong>환자<br>보호자</strong><i class="xi-hotel"></i>
+                        </a>
+                    </div>
+                    <div class="doctorMod">
+                        <a href="./index-docter.html">
+                            <strong>의료<br>전문가</strong><i class="xi-medicine"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="inner">
+                    <strong>공감, 또 하나의 치료</strong>
+                    <span>질병 치료를 넘어 환자의 마음까지 치유하겠습니다.</span>
+                </div>
+            </div>
+            <div class="content">
+                <button class="view-venner-l"><i class="xi-angle-left"></i></button>
+                <button class="view-venner-r"><i class="xi-angle-right"></i></button>
+                <div class="inner">
+                    <ul class="familySite">
+                        <li>연세암병원 <i class="xi-enter"></i></li>
+                        <li>심장혈관병원 <i class="xi-enter"></i></li>
+                        <li>어린이병원 <i class="xi-enter"></i></li>
+                        <li>안과병원 <i class="xi-enter"></i></li>
+                        <li>재활병원 <i class="xi-enter"></i></li>
+                    </ul>
+                    <ul class="contentBenner">
+                        <div class="view-venner">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-checkup_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>건강검진 안내</strong>
+                                        <span>세브란스헬스체크업에서<br>건강검진을 안내해드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-print_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>온라인 발급 서비스</strong>
+                                        <span>온라인 제증명,의무기록<br>사본 발급을 안내해 드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-reservation_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>예약현황</strong>
+                                        <span>회원 및 비회원 예약<br>내역을 볼 수 있습니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-global_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>비자신체검사</strong>
+                                        <span>비자신체검사를<br>안내해드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="SearchDoc.html">
+                                    <img src="./images/index/ico-shortcut-expert_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>의료진 찾기</strong>
+                                        <span>전문 의료진을 빠르게<br>찾을 수 있습니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-department_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>진료과 찾기</strong>
+                                        <span>진료 전 진료과를<br>안내해 드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-calendar_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>진료예약</strong>
+                                        <span>회원/비회원 편리하게<br>예약할 수 있습니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-checkup_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>건강검진 안내</strong>
+                                        <span>세브란스헬스체크업에서<br>건강검진을 안내해드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-print_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>온라인 발급 서비스</strong>
+                                        <span>온라인 제증명,의무기록<br>사본 발급을 안내해 드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-reservation_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>예약현황</strong>
+                                        <span>회원 및 비회원 예약<br>내역을 볼 수 있습니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-global_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>비자신체검사</strong>
+                                        <span>비자신체검사를<br>안내해드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-expert_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>의료진 찾기</strong>
+                                        <span>전문 의료진을 빠르게<br>찾을 수 있습니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-department_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>진료과 찾기</strong>
+                                        <span>진료 전 진료과를<br>안내해 드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-calendar_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>진료예약</strong>
+                                        <span>회원/비회원 편리하게<br>예약할 수 있습니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/index/ico-shortcut-checkup_2x.png" alt="">
+                                    <div class="textBox">
+                                        <strong>건강검진 안내</strong>
+                                        <span>세브란스헬스체크업에서<br>건강검진을 안내해드립니다.</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </div>
+                    </ul>
+                    <ul class="contentCard">
+                        <li class="card-1">
+                            <strong>공감Story</strong>
+                            <a href="#">
+                                <p>의료진 이야기</p>
+                                <span>정교한 수술로 어린 환자들의<br>일상 회복을 돕는 인경 교수</span>
+                            </a>
+                        </li>
+                        <li class="card-2">
+                            <strong>건강정보</strong>
+                            <a href="#">
+                                <p>질환/신체부위별 찾기</p>
+                                <span>결핵 Tuberculosis</span>
+                            </a>
+                        </li>
+                        <li class="card-3">
+                            <strong>중입자치료센터</strong>
+                            <a href="#">
+                                <span>중입자치료 상담<br>(전립선암 대상 , <br>
+                                    그 외 암종은 추후 공지)<br>
+                                    상담예약 02-2228-8000</span>
+                            </a>
+                        </li>
+                        <li class="card-4">
+                            <a href="#"><img src="images/index/img-support.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsvenor">
+                <div class="inner">
+                    <div class="news-but-box">
+                        <h3>NEWS <a href=""><i class=""></i></a></h3>
+                        <span>고객여러분께 가장 빠른 소식을<br>제공해 드리겠습니다.</span>
+                        <button class="news-but-l"><i class="xi-long-arrow-left"></i></button>
+                        <button class="news-but-r"><i class="xi-long-arrow-right"></i></button>
+                    </div>
+                    <div class="news-text-box">
+                        <div class="news-item-benner">
+                            <div class="news-item webzine">
+                                <a href="">[국민일보] 방광암, 소변으로 진단 ... 재발 점검도 쉬워진다</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[중앙일보]남성형 탈모, 약물치료 시 기대할 수 있는 부분과 걱정해야 할 점은</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[뉴시스] 위암 치료 악영향 주는 '이것' ... "암세포 자라는 환경조성"</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[국민일보] [And 건강] "초기 전립선암부터 난치 . 희귀암에 희망 ... 내년 상반기 풀 가동"</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[중앙일보] 외국인 독립유공자 예우 안 하면, 한국 위기 때 누가 돕겠나[인요한 세브란스 병원]</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[헬스조선] [우리 병원 언성히어로] "병원 정전이요? 그럴 일은 없습니다"</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[한국일보] 소리 없이 찾아오는 '골다공증', 뼈 자극 운동하면 예방 도움</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[조선일보] 납작한 신생아 뒤통수,'헬멧 교정' 으로 개선</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[헬스조선] 전국 확산 '엠폭스' ... 백신 접종 누가 해야 할까?</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item webzine">
+                                <a href="">[국민일보] 방광암, 소변으로 진단 ... 재발 점검도 쉬워진다</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[중앙일보]남성형 탈모, 약물치료 시 기대할 수 있는 부분과 걱정해야 할 점은</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[뉴시스] 위암 치료 악영향 주는 '이것' ... "암세포 자라는 환경조성"</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[국민일보] [And 건강] "초기 전립선암부터 난치 . 희귀암에 희망 ... 내년 상반기 풀 가동"</a>
+                                <span>2023-05-09</span>
+                            </div>
+                            <div class="news-item report">
+                                <a href="">[중앙일보] 외국인 독립유공자 예우 안 하면, 한국 위기 때 누가 돕겠나[인요한 세브란스 병원]</a>
+                                <span>2023-05-09</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notice">
+                <div class="inner">
+                    <div class="notice-benner">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./images/index/notice1.png" alt="주차요금안내">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/index/notice2.png" alt="보호자 방문 안내">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/index/notice3.png" alt="코로나 진료 안내">
+                                </a>
+                            </li>
+                            <li>
+                                
+                                    <img src="./images/index/notice4.png" alt="뉴크위스 선정 배너">
+                                
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/index/notice5.png" alt="고객만족도 우수 배너">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/index/notice6.png" alt="온라인 의무기록 사본 발급">
+                                </a>
+                            </li>
+                            <li>
+                                
+                                    <img src="./images/index/notice7.png" alt="3주기 의료기관 인증 배너">
+                                
+                            </li>
+                            <li>
+                                
+                                    <img src="./images/index/notice8.png" alt="JCI 5차 인증 배너">
+                                
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/index/notice9.png" alt="셔틀버스 안내">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/index/notice10.png" alt="비급여 진료비용 검색">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./images/index/notice11.png" alt="진료시 주민번호 이용허용">
+                                </a>
+                            </li>
+                            <li>
+                                
+                                    <img src="./images/index/notice12.png" alt="환경만족지수 안내배너">
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Quick_menu">
+                <ul>
+                    <li class="on">홈</li>
+                    <li>메인</li>
+                    <li>뉴스</li>
+                    <li>공지사항</li>
+                    <li>TOP</li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer-family">
+                    <ul class="family-list">
+                        <li class="on"><a href="#">세브란스병원</a></li>
+                        <li><a href="#">치과대학병원</a></li>
+                        <li><a href="#">강남세브란스병원</a></li>
+                        <li><a href="#">용인세브란스병원</a></li>
+                    </ul>
+                    <ul class="family-icon">
+                        <li><a href="https://post.naver.com/my.naver?memberNo=19457070"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="#"><i class="xi-tumblr-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/chSNUH"><i class="xi-youtube-play"></i></a></li>
+                        <li><a href="#"><i class="xi-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/SeveranceFan"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="https://twitter.com/iSEVERANCE"><i class="xi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul class="info-list">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">병원소개</a></li>
+                    </ul>
+                    <p>03722 서울특별시 서대문구 연세로 50-1</p>
+                    <p>COPYRIGHT(C) SEVERANCE HOSPITAL. ALL RIGHTS RESERVED.</p>
+                    <a href="#" class="netbut">연세의료원 네트워크
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

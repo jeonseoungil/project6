@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>진료회원 인증</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <div class="top-logo">
+                    <a href="index.html" class="sublogo"><img src="images/index/nomal.jpg" alt="grouplogo"></a>
+                    <a href="index.html" class="mainlogo"><img src="images/index/sev_logo@2x.png" alt="logo"></a>
+                    <ul class="loginMenu">
+                        <li><a href="#">원격</a></li>
+                        <li><a href="login1.html">로그인</a></li>
+                        <li><a href="login2.html">회원가입</a></li>
+                        <li><select name="Language" id="Language_main">
+                            <option value="korean">korean</option>
+                            <option value="english">english</option>
+                            <option value="japansese">japansese</option>
+                            <option value="chinese">chinese</option>
+                        </select></li>
+                    </ul>
+                </div>
+                <div class="topMenu">
+                    <a href="#"><i class="xi-bars"></i></a>
+                    <!-- 메인 목록이 추가된다면 top-mainMenu 하위개체로 -->
+                    <ul class="top-mainMenu">
+                        <li>
+                            <a href="main1ResevationInfo.html">진료안내</a>
+                        </li>
+                        <li>
+                            <a href="main2parkingInfo.html">고객참여</a>
+                        </li>
+                        <li>
+                            <a href="work3.html">병원소개</a>
+                        </li>
+                    </ul>
+                    <a href="#"><i class="xi-search"></i></a>
+                    <!-- 마우스 올렸을때 스크롤 메뉴 -->
+                    <div class="scrollMenu">
+                        <ul class="scroll-1">
+                            <li><a href="main1ResevationInfo.html">예약안내</a></li>
+                            <li><a href="SearchDoc.html">의료진 찾기</a></li>
+                            <li><a href="work1.html">제증명 FAQ</a></li>
+                        </ul>
+                        <ul class="scroll-2">
+                            <li><a href="main2parkingInfo.html">주차안내</a></li>
+                            <li><a href="login1.html">로그인 예약</a></li>
+                            <li><a href="main2treatRequest.html">진료의뢰서</a></li>
+                        </ul>
+                        <ul class="scroll-3">
+                            <li><a href="work3.html">병원 소개</a></li>
+                            <li><a href="work4.html">연혁</a></li>
+                            <li><a href="work5.html">고객 헌장</a></li>
+                        </ul>
+                    </div>
+                    <div class="scrollImg">
+                        <div class="scrollImg-sub1 on">
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료.jpg" alt="" width="250px" height="200">
+                            </div>
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료1.jpg" alt="" width="400px" height="100px">
+                                <img src="./images/병원과진료2.jpg" alt="" width="400px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub2">
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자1.jpg" alt="" width="300px" height="100px">
+                            </div>
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자2.jpg" alt="" width="300px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub3">
+                            <div class="sub3-in">
+                                <img src="./images/병원.jpg" alt="" width="200" height="200">
+                            </div>
+                            <div class="sub3-in">
+                                <img src="./images/병원2.png" alt="" width="200" height="200" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-underMenu">
+                <div class="inner">
+                    <ul>
+                        <li><a href="index.html"><i class="xi-home"></i></a></li>
+                        <li><a href="login1.html">예약 조회</a></li>
+                        <li><a href="work3.html">병원 소개<i class=""></i></a></li>
+                        <li><a href="SearchDoc.html">의료진 소개<i class=""></i></a></i></li>
+                        <li><a href="work5.html">고객 헌장<i class=""></i></a></i></li>
+                    </ul>
+                    <ul>
+                        <li><a href="login1.html">예약</a></li>
+                        <li><a href="login1.html">비회원 예약</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_search_menu">
+                <div class="search_menu_bord_bg"></div>
+                <div class="search_menu_bord">
+                    <h2>찾으시는 내용을 검색하실 수 있습니다.</h2>
+                    <div class="search_menu_box">
+                        <input type="search" placeholder="검색할 내용을 입력하세요" class="input_search_menu">
+                        <button class="button_search_menu"><i class="xi-search"></i></button>
+                        <i class="xi-close"></i>
+                    </div>
+                    <ul class="search_menu_list"></ul>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+    <div class="inner">
+        <div class="Medical_membership_certification">
+            <h2>진료회원 인증</h2>
+            <ul>
+                <li class="on" data-id="01">본인명의 휴대전화 인증</li>
+                <li  data-id="02">아이핀(i-pin)인증</li>
+                <li data-id="03">주민등록번호 확인</li>
+            </ul>
+        </div>
+            <table class="Identification_check on"  id="01">
+           <colgroup>
+            <col class="w1">
+            <col class="w2">
+           </colgroup>
+           <tbody>
+            <tr> 
+                <td>휴대전화 인증</td>
+                <td><button>본인인증하기</button></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td> <input type="text" name="name" class="username" ><p>인증 후 자동으로 이름이 입력됩니다.</p></td>
+            </tr>
+            <tr>
+                <td>인증방법 선택</td>
+                <td> 
+                    <input type="radio" id="Resident_registration_number" name="Personal_authentication_method" class="Unique_number"><label for="Authentication_method" name="Personal_authentication_method">주민등록번호</label>
+                    <input type="radio" id="Patient number" name="Personal_authentication_method" class="Unique_number"><label for="Patient number" name="Personal_authentication_method">진찰권번호(환자번호)</label>
+                </td>
+            </tr>
+            <tr class="registration_number_tr">
+                <td>주민등록 번호</td>
+                <td>
+                    <input type="text" class="registration_number"> - <input type="text" class="registration_number"> <input type="checkbox" id="View_hidden_information"><label for="View_hidden_information">숨김정보 보기</label>
+                    <p>※ 병원 환자정보 확인을 위해 정확히 입력해 주십시오.</p>
+                </td>
+            </tr>
+            <tr class="consultation_number_tr">
+                <td>진찰권 번호</td>
+                <td>
+                    <input type="text" class="registration_number"> - <input type="text" class="registration_number"> <input type="checkbox" id="View_hidden_information"><label for="View_hidden_information">숨김정보 보기</label>
+                    <p>※ 병원 환자정보 확인을 위해 정확히 입력해 주십시오.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>휴대폰번호</td>
+                <td><input type="text"  name="phone_Number" class="phone_number_authentication" id="phone_number_authentication1"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication2"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication3"></td>
+            </tr>
+           </tbody>
+            </table>
+            <table class="Identification_check"  id="02">
+                <colgroup>
+                 <col class="w1">
+                 <col class="w2">
+                </colgroup>
+                <tbody>
+                 <tr>
+                     <td>아이핀 인증</td>
+                     <td><button>본인인증하기</button></td>
+                 </tr>
+                 <tr>
+                     <td>이름</td>
+                     <td> <input type="text" name="name" class="username" ><p>인증 후 자동으로 이름이 입력됩니다.</p></td>
+                 </tr>
+                 <tr>
+                     <td>인증방법 선택</td>
+                     <td> 
+                         <input type="radio" id="Resident_registration_number" name="Personal_authentication_method" class="Unique_number"><label for="Authentication_method" name="Personal_authentication_method">주민등록번호</label>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>주민등록 번호</td>
+                     <td>
+                         <input type="text" class="registration_number"> - <input type="text" class="registration_number"> <input type="checkbox" id="View_hidden_information"><label for="View_hidden_information">숨김정보 보기</label>
+                         <p>※ 병원 환자정보 확인을 위해 정확히 입력해 주십시오.</p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>휴대폰번호</td>
+                     <td><input type="text"  name="phone_Number" class="phone_number_authentication" id="phone_number_authentication1"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication2"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication3"></td>
+                 </tr>
+                </tbody>
+                 </table>
+                 <table class="Identification_check"  id="03">
+                    <colgroup>
+                     <col class="w1">
+                     <col class="w2">
+                    </colgroup>
+                    <tbody>
+                     <tr>
+                         <td>이름</td>
+                         <td> <input type="text" name="name" class="username" ><p>인증 후 자동으로 이름이 입력됩니다.</p></td>
+                     </tr>
+                     <tr>
+                         <td>인증방법 선택</td>
+                         <td> 
+                             <input type="radio" id="Resident_registration_number" name="Personal_authentication_method" class="Unique_number"><label for="Authentication_method" name="Personal_authentication_method">휴대전화번호</label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>휴대폰번호</td>
+                         <td><input type="text"  name="phone_Number" class="phone_number_authentication" id="phone_number_authentication1"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication2"> - <input type="text" name="phone_Number" class="phone_number_authentication" id="phone_number_authentication3"></td>
+                     </tr>
+                     <tr>
+                        <td>인증번호</td>
+                        <td><input type="text" name="phone_Number_Certified" class="phone_Number_Input__Certified"> <button>인증</button></td>
+                     </tr>
+                    </tbody>
+                     </table>
+        <p>
+            <button class="Authenticating">인증하기</button>
+        </p>
+        <div class="second_stage_of_membership_registration">
+        <h2>회원가입</h2>
+        <ul class="subscription2">
+            <li>step01<br>약관동의</li>
+            <li>step02<br>개인정보/본인인증</li>
+            <li>step03<br>가입완료</li>
+        </ul>
+        <strong><em>*</em>표기항목은 필수 입력항목입니다.</strong>
+    </div>
+        <table class="join_membership">
+           <colgroup>
+            <col class="w1">
+            <col class="w2">
+           </colgroup>
+           <tbody>
+             <tr>
+                <td><span>*</span>아이디</td>
+                <td><input type="text" name="Registration_ID" class="Registration_ID"> <button class="ID_Duplicate_check">중복확인</button><p>한글, 영문 + 숫자 혼용 6~12자</p> </td>
+             </tr>
+             <tr>
+                <td><span>*</span>비밀번호</td>
+                <td><input type="password"name="Registration_Password" ><p>영문, 숫자, 특수문자(!@#$%^&*(),.;) 3가지 이상 조합으로 9~16자 이여야 합니다.</p></td>
+             </tr>
+             <tr>
+                <td><span>*</span>비밀번호 확인</td>
+                <td><input type="password" name="Registration_Repassword"></td>
+             </tr>
+             <tr>
+                <td><span>*</span>이름</td>
+                <td><input type="text" name="name" class="username" readonly></td>
+             </tr>
+             <tr>
+                <td><span>*</span>이메일</td>
+                <td><input type="text" name="E-mail"> @ <select name="E-mail_address" id="E-mail_address">
+                    <option value="선택">선택</option>
+                    <option value="naver">naver.com</option>
+                    <option value="daum">daum.net</option>
+                    <option value="nate">nate.net</option>
+                    <option value="google">google.co.kr</option>
+                </select> <input type="text" name="E-mail" id="E_mail">
+                <input type="checkbox" id="Naver_ID">
+                <label for="Naver_ID" class="Naver_ID">네이버 ID사용</label>
+                <button class="naver_button">네이버 인증</button>
+             </td>
+             </tr>
+             <tr>
+                <td><span>*</span>주소</td>
+                <td><input type="text" readonly> <button class="Find_Address_button">주소찾기</button>
+                   <div> <input type="text" name="the_rest_of_the_address" class="the_rest_of_the_address" ><input type="text" class="the_rest_of_the_address" name="the_rest_of_the_address"></div>
+                </td>
+             </tr>
+             <tr>
+                <td><span>*</span>휴대전화</td>
+                <td><input type="text"  name="phone_Number" class="phone_Number_Input" id="phone_Number_Input1" readonly> - <input type="text" name="phone_Number" class="phone_Number_Input" id="phone_Number_Input2" readonly> - <input type="text" name="phone_Number" class="phone_Number_Input" id="phone_Number_Input3" readonly>
+                <p>홈페이지 회원 SMS 정보 수신</p></td>
+             </tr>
+             <tr>
+                <td>추가연락처</td>
+                <td><input type="text" placeholder="02" name="Additional_Contacts" class="Additional_Contacts" > - <input type="text" name="Additional_Contacts"  class="Additional_Contacts"> - <input type="text"  name="Additional_Contacts"  class="Additional_Contacts"></td>
+             </tr>
+             <tr>
+                <td><span>*</span>생년월일</td>
+                <td><select name="year" id="date_of_birth">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option></select>
+                    <select name="month" id="date_of_birth">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                    </select>
+                    <select name="day" id="date_of_birth">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                    </select> </td> </tr>
+            <tr>
+                <td><span>*</span>국적</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><span>*</span>성별</td>
+                <td>
+                <input type="radio" name="gender" id="male" class="gender"><label for="male" name="gender" class="sexual">남자</label>
+                <input type="radio" name="gender" id="female"  class="gender"><label for="female" name="gender"  class="sexual">여자</label>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>자동방지문자</td>
+                <td><div class="Auto_preventive_characters"><p>  7 7 6 0 6 7 2 8 </p></div>
+                    <div class="Auto_preventive_text"><p>자동가입을 방지하기 위해 보안절차를 거치고 있습니다. 왼쪽 이미지를 보이는 대로 입력해주세요.</p>
+                    <input type="text" name="an_auto_protective_character"></div>
+                </td>
+            </tr>
+            <td><span>*</span>개인정보<br>보관기한 설정</td>
+            <td>
+                <input type="radio" id="information_retention_deadline" name="information_retention_deadline"><label for="information_retention_deadline" name="information_retention_deadline" class="Keeping_personal_information">2년</label>
+                <input type="radio" id="information_retention_deadline" name="information_retention_deadline"><label for="information_retention_deadline" name="information_retention_deadline"  class="Keeping_personal_information">3년</label>
+                <input type="radio" id="information_retention_deadline" name="information_retention_deadline"><label for="information_retention_deadline" name="information_retention_deadline" class="Keeping_personal_information">5년</label>
+                <p>회원님의 개인정보 보관 기한을 설정해주세요. 최대 5년까지 가능합니다.</p>
+            </td>
+           </tbody>
+        </table>
+        <button class="Sign_up_button">가입하기</button>
+    </div>
+    </div>
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer-family">
+                <ul class="family-list">
+                    <li class="on"><a href="#">세브란스병원</a></li>
+                    <li><a href="#">치과대학병원</a></li>
+                    <li><a href="#">강남세브란스병원</a></li>
+                    <li><a href="#">용인세브란스병원</a></li>
+                </ul>
+                <ul class="family-icon">
+                    <li><a href="https://post.naver.com/my.naver?memberNo=19457070"><i class="xi-naver-square"></i></a></li>
+                    <li><a href="#"><i class="xi-tumblr-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/chSNUH"><i class="xi-youtube-play"></i></a></li>
+                    <li><a href="#"><i class="xi-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/SeveranceFan"><i class="xi-facebook-official"></i></a></li>
+                    <li><a href="https://twitter.com/iSEVERANCE"><i class="xi-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul class="info-list">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="#">병원소개</a></li>
+                </ul>
+                <p>03722 서울특별시 서대문구 연세로 50-1</p>
+                <p>COPYRIGHT(C) SEVERANCE HOSPITAL. ALL RIGHTS RESERVED.</p>
+                <a href="#" class="netbut">연세의료원 네트워크
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="js/main.js"></script> 
+</body>
+</html>

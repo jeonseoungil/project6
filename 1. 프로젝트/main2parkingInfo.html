@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>주차안내</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+
+</head>
+
+<body>
+    
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="inner">
+                <div class="top-logo">
+                    <a href="index.html" class="sublogo"><img src="images/index/nomal.jpg" alt="grouplogo"></a>
+                    <a href="index.html" class="mainlogo"><img src="images/index/sev_logo@2x.png" alt="logo"></a>
+                    <ul class="loginMenu">
+                        <li><a href="#">원격</a></li>
+                        <li><a href="login1.html">로그인</a></li>
+                        <li><a href="login2.html">회원가입</a></li>
+                        <li><select name="Language" id="Language_main">
+                            <option value="korean">korean</option>
+                            <option value="english">english</option>
+                            <option value="japansese">japansese</option>
+                            <option value="chinese">chinese</option>
+                        </select></li>
+                    </ul>
+                </div>
+                <div class="topMenu">
+                    <a href="#"><i class="xi-bars"></i></a>
+                    <!-- 메인 목록이 추가된다면 top-mainMenu 하위개체로 -->
+                    <ul class="top-mainMenu">
+                        <li>
+                            <a href="main1ResevationInfo.html">진료안내</a>
+                        </li>
+                        <li>
+                            <a href="main2parkingInfo.html">고객참여</a>
+                        </li>
+                        <li>
+                            <a href="work3.html">병원소개</a>
+                        </li>
+                    </ul>
+                    <a href="#"><i class="xi-search"></i></a>
+                    <!-- 마우스 올렸을때 스크롤 메뉴 -->
+                    <div class="scrollMenu">
+                        <ul class="scroll-1">
+                            <li><a href="main1ResevationInfo.html">예약안내</a></li>
+                            <li><a href="SearchDoc.html">의료진 찾기</a></li>
+                            <li><a href="work1.html">제증명 FAQ</a></li>
+                        </ul>
+                        <ul class="scroll-2">
+                            <li><a href="main2parkingInfo.html">주차안내</a></li>
+                            <li><a href="login1.html">로그인 예약</a></li>
+                            <li><a href="main2treatRequest.html">진료의뢰서</a></li>
+                        </ul>
+                        <ul class="scroll-3">
+                            <li><a href="work3.html">병원 소개</a></li>
+                            <li><a href="work4.html">연혁</a></li>
+                            <li><a href="work5.html">고객 헌장</a></li>
+                        </ul>
+                    </div>
+                    <div class="scrollImg">
+                        <div class="scrollImg-sub1 on">
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료.jpg" alt="" width="250px" height="200">
+                            </div>
+                            <div class="sub1-in">
+                                <img src="./images/병원과진료1.jpg" alt="" width="400px" height="100px">
+                                <img src="./images/병원과진료2.jpg" alt="" width="400px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub2">
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자1.jpg" alt="" width="300px" height="100px">
+                            </div>
+                            <div class="sub2-in">
+                                <img src="./images/병원과환자2.jpg" alt="" width="300px" height="100px">
+                            </div>
+                        </div>
+                        <div class="scrollImg-sub3">
+                            <div class="sub3-in">
+                                <img src="./images/병원.jpg" alt="" width="200" height="200">
+                            </div>
+                            <div class="sub3-in">
+                                <img src="./images/병원2.png" alt="" width="200" height="200" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-underMenu">
+                <div class="inner">
+                    <ul>
+                        <li><a href="index.html"><i class="xi-home"></i></a></li>
+                        <li><a href="login1.html">예약 조회</a></li>
+                        <li><a href="work3.html">병원 소개<i class=""></i></a></li>
+                        <li><a href="SearchDoc.html">의료진 소개<i class=""></i></a></i></li>
+                        <li><a href="work5.html">고객 헌장<i class=""></i></a></i></li>
+                    </ul>
+                    <ul>
+                        <li><a href="login1.html">예약</a></li>
+                        <li><a href="login1.html">비회원 예약</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_search_menu">
+                <div class="search_menu_bord_bg"></div>
+                <div class="search_menu_bord">
+                    <h2>찾으시는 내용을 검색하실 수 있습니다.</h2>
+                    <div class="search_menu_box">
+                        <input type="search" placeholder="검색할 내용을 입력하세요" class="input_search_menu">
+                        <button class="button_search_menu"><i class="xi-search"></i></button>
+                        <i class="xi-close"></i>
+                    </div>
+                    <ul class="search_menu_list"></ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- 메인 -->
+
+        <div class="moreBg"></div>
+        <main id="mainfo">
+            <div class="inner">
+                <div class="content10">
+                    <div class="contUtilMenuWrap">
+                        <h2>주차안내</h2>
+                        <ul class="contUtilMenu">
+                            <li><a href="#">인쇄</a></li>
+                            <li><a href="#">관심콘텐츠</a></li>
+                            <li><a href="#">URL복사</a></li>
+                            <li>
+                                <button><i class="xi-minus"></i></button>
+                            </li>
+                            <li>
+                                <button><i class="xi-plus"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <img src="images/주차안내 _ 서울대학교병원/1주차장_ 2주차장_ 3주차장_ 옥외주차장 위치.jpg" alt=""  class="parkingMap">
+                    <div class="parkingScale">
+                        <h3>주차장규모</h3>
+                        <ul>
+                            <li>
+                                <img src="images/주차안내 _ 서울대학교병원/제 1주차장.jpg" alt="">
+                                <strong>제 1주차장</strong>
+                                <em>지하 5층 : 883면</em>
+                                <i class="xi-plus-circle-o"></i>
+                            </li>
+                            <li>
+                                <img src="images/주차안내 _ 서울대학교병원/제 2주차장.jpg" alt="">
+                                <strong>제 2주차장</strong>
+                                <em>지하 4층~6층 : 552면</em>
+                                <i class="xi-plus-circle-o"></i>
+                            </li>
+                            <li>
+                                <img src="images/주차안내 _ 서울대학교병원/제 3주차장.jpg" alt="">
+                                <strong>제 3주차장</strong>
+                                <em>지하 3층 : 263면</em>
+                                <i class="xi-plus-circle-o"></i>
+                            </li>
+                            <li>
+                                <img src="images/주차안내 _ 서울대학교병원/옥외주차장.jpg" alt="">
+                                <strong>옥외주차장</strong>
+                                <em>지하 4층, 지하 2층 : 300면</em>
+                                <i class="xi-plus-circle-o"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="parkingCharge">
+                        <h3>주차요금</h3>
+                        <table>
+                            <colgroup>
+                                <col class="ww1">
+                                <col class="ww2">
+                                <col class="ww3">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">시간구분</th>
+                                    <th scope="col">주차요금</th>
+                                    <th scope="col">비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>주간<br>(07:00~22:00)</td>
+                                    <td>30분 초과시 기본 2,000원<br>
+                                        (단, 30분 이내 출차 시 무료)<br>
+                                        추가 10분당 500원</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>야간<br>
+                                        (22:00~07:00)</td>
+                                    <td>일괄 1,000원</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>정기권<br>
+                                        *입원환자 및 보호자만 신청 가능
+                                        </td>
+                                    <td>기본 3일권 50,000원<br>
+                                        3일 이후 1일 추가 시 5,000원<br>
+                                        (최초3일은 연속으로사용)</td>
+                                    <td>잦은 출차 시 유리<br>
+                                        입원환자 보호자만 신청 가능<Br>
+                                        (외래진료시 불가)</td>
+                                </tr>
+                                <tr>
+                                    <td>장기주차<br>
+                                        (입차 후 미출차 시)</td>
+                                    <td>입차 후 24시간 30,000원<br>
+                                        24시간이후 1일당 10,000원 추가</td>
+                                    <td>단기 입원자에게 유리<br>
+                                        입출차 불가</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="chareDiscount">
+                        <h3>주차요금 감면내역</h3>
+                        <table>
+                            <colgroup>
+                                <col class="ww4">
+                                <col class="ww5">
+                                <col class="ww6">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>감면구분</th>
+                                    <th>감면시간</th>
+                                    <th>비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>진료예약만 하고 가는 경우</p>
+                                        <p>입원비 중간수납 시</p>
+                                    </td>
+                                    <td>1시간</td>
+                                    <td>진찰권 또는 진료비 영수증 제시</td>
+                                </tr>
+                                <tr>
+                                    <td><p>국가유공자, 장애인차량
+                                        (복지카드 소지 시 1일 1회 적용)</p></td>
+                                    <td>3시간</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>입원, 퇴원, 당일진료, 각종 검사<br>
+                                            (단, 입원 중 진료/수술은 해당없음)</p>
+                                        <p>특실, 1인실 입원가족 (1대까지)</p>
+                                    </td>
+                                    <td>4시간</td>
+                                    <td>진찰권 또는 진료비 영수증 제시</td>
+                                </tr>
+                                <tr>
+                                    <td><p>당일진료 후 당일입원</p></td>
+                                    <td>6시간</td>
+                                    <td>진찰권 또는진료비 영수증 제시</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>1일 2개과 진료</p>
+                                        <p>특수검사<br>
+                                            (뼈스캔, 복강경수술, 핵의학검사, 낮병동(<br>
+                                            당일 입퇴원 수속 한 경우만), MRI 등)<br>
+                                            (단, 입원 중 진료/수술은 해당없음)</p>
+                                    </td>
+                                    <td>8시간</td>
+                                    <td>진찰권 또는 진료비 영수증 제시</td>
+                                </tr>
+                                <tr>
+                                    <td><p>응급실, PET-CT, 수면다원검사, 감마나이프, 건강증진센터,<br> 
+                                        혈액투석, 낮병동(당일 입퇴원 수속 한 경우만), 혈액종양,<br>
+                                        응급실, 당일 입퇴원환자등<br>
+                                        (단, 입원 중 진료/수술은 해당없음)</p></td>
+                                    <td>24시간(1일)</td>
+                                    <td>진찰권 또는 진료비 영수증 제시</td>
+                                </tr>
+                                <tr>
+                                    <td><p>경차</p></td>
+                                    <td>50%	</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="discountReference">
+                            <p>주차요금의 과중한 부담 방지와 외래환자 및 내원객 주차편의를 위해 입원하신 후 가족들이 차량을 회차하여 주시기를<br> 부탁드립니다.</p>
+                            <p>장기주차 안내 : 주차관리소에서 정기권(3일 50,000원, 3일 이후 1일 5,000원)을 구입하여 이용하시면 됩니다.</p>
+                            <p>주차비 문의 및 환불 : 진료영수증 또는 진료카드와 주차비 영수증을 주차관리소에 제출하면 환불가능 합니다.</p>
+                        </div>
+
+                    </div>
+                    <div class="infoTel">
+                        <h3>이용안내 전화번호</h3>
+                        <strong>고객주차장 관리소 :<span> 02-2072-2908</span></strong>
+                        <strong>장례주차장 : <span> 02-2072-2051</span></strong>
+                    </div>
+                   
+
+
+
+                    <div class="surbeyForm">
+                        <p>현재 페이지에서 제공되는 내용과 사용편의성에 대하여 만족하십니까?</p>
+                        <form action="???.jsp">
+                            <input type="radio" name="rad" id="rad1">
+                            <label for="rad1">매우만족</label>
+                            <input type="radio" name="rad" id="rad2">
+                            <label for="rad2">만족</label>
+                            <input type="radio" name="rad" id="rad3">
+                            <label for="rad3">보통</label>
+                            <input type="radio" name="rad" id="rad4">
+                            <label for="rad4">불만족</label>
+                            <input type="radio" name="rad" id="rad5">
+                            <label for="rad5">매우불만족</label>
+                            <div class="etcInput">
+                                <input type="radio" name="rad" id="rad6">
+                                <label for="rad6">기타</label>
+                                <input type="text" id="text11" disabled >
+                            </div>
+                            <button class="surbeySubmit">확인</button>
+                            <div class="etcUtil">
+                                <span>관리부서 : 외래원무과 (1588-5700)</span>
+                                <span>최종 업데이트일 : 2022-05-31</span>
+                                <a href="#">통계<i class="xi-plus"></i></a>
+                                <a href="#">오류신고하기<i class="xi-angle-right"></i></a>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <aside class="aside">
+                    <div class="relationContent">
+                        <h2>관련 콘텐츠</h2>
+                        <ul>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">원내위치도</a></li>
+                            <li><a href="#">원내편의시설</a></li>
+                            <li><a href="#">문병안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h2>자주 찾는 서비스</h2>
+                        <ul>
+                            <li><a href="#">본원</a></li>
+                            <li><a href="#">진료예약</a></li>
+                            <li><a href="#">진료안내</a></li>
+                            <li><a href="#">외래예약확인</a></li>
+                        </ul>
+                    </div>
+                    <ul class="call">
+                        <span>대표전화</span>
+                        <strong>1588-5700</strong>
+                    </ul>
+                    <img src="images/for_sending/img_top.png" alt="">
+
+                </aside>
+            <div class="parkingPopup">
+                <div class="popupHeader">
+                    <h2>1주차장 안내도</h2>
+                    <button><i class="xi-close"></i></button>
+                </div>
+                <div class="floorSelect">
+                    <ul>
+                        <li>차량진입안내</li>
+                        <li>B3층</li>
+                        <li>B4층</li>
+                        <li>B5층</li>
+                    </ul>
+                    <img src="images/for_sending/03_01.jpg" alt="">
+                </div>
+            </div>
+            </div>
+            
+        </main>
+        <!-- 섹션 나누기 1 -->
+
+        <!-- 섹션 나누기 2 -->
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer-family">
+                    <ul class="family-list">
+                        <li class="on"><a href="#">세브란스병원</a></li>
+                        <li><a href="#">치과대학병원</a></li>
+                        <li><a href="#">강남세브란스병원</a></li>
+                        <li><a href="#">용인세브란스병원</a></li>
+                    </ul>
+                    <ul class="family-icon">
+                        <li><a href="https://post.naver.com/my.naver?memberNo=19457070"><i class="xi-naver-square"></i></a></li>
+                        <li><a href="#"><i class="xi-tumblr-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/chSNUH"><i class="xi-youtube-play"></i></a></li>
+                        <li><a href="#"><i class="xi-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/SeveranceFan"><i class="xi-facebook-official"></i></a></li>
+                        <li><a href="https://twitter.com/iSEVERANCE"><i class="xi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <ul class="info-list">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">병원소개</a></li>
+                    </ul>
+                    <p>03722 서울특별시 서대문구 연세로 50-1</p>
+                    <p>COPYRIGHT(C) SEVERANCE HOSPITAL. ALL RIGHTS RESERVED.</p>
+                    <a href="#" class="netbut">연세의료원 네트워크
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="move-top">TOP</a>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
